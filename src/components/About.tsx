@@ -55,8 +55,8 @@ const About = () => {
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
               <Clock className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
             </div>
-            <div className="text-2xl md:text-3xl font-bold text-primary">Experienced & Trusted</div>
-            <div className="text-sm text-muted-foreground">Professional Locksmith</div>
+            <div className="text-4xl md:text-5xl font-bold text-primary">24/7</div>
+            <div className="text-sm text-muted-foreground">Service Available</div>
           </div>
 
           <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
@@ -89,19 +89,10 @@ const About = () => {
           <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-              <ShieldCheck className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
-            </div>
-            <div className="text-2xl md:text-3xl font-bold text-primary">Licensed, Insured & Certified</div>
-            <div className="text-sm text-muted-foreground">Your security is our priority</div>
-          </div>
-
-          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
               <Award className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
             </div>
-            <div className="text-4xl md:text-5xl font-bold text-primary">24/7</div>
-            <div className="text-sm text-muted-foreground">Service Available</div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">Experienced & Trusted</div>
+            <div className="text-sm text-muted-foreground">Professional Locksmith</div>
           </div>
         </div>
       </div>
