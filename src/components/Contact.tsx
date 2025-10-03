@@ -64,40 +64,44 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left Column: Contact Info */}
-          <div className="grid grid-cols-1 sm:grid-cols-1 gap-4">
-            <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 space-y-1 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-1">
-                <Phone className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
+          <div className="flex flex-col gap-6">
+            <div className="bg-card/80 border border-border rounded-xl p-5 flex items-start gap-4">
+              <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mt-1">
+                <Phone className="h-7 w-7 text-primary" />
               </div>
-              <div className="text-base font-semibold text-foreground">Emergency Hotline</div>
-              <div className="text-xs text-muted-foreground">Available 24/7 for emergencies</div>
-              <a href="tel:+16479068124" className="text-primary hover:text-primary-glow font-semibold text-sm block mt-1">(647) 906-8124</a>
+              <div>
+                <div className="font-bold text-foreground text-base mb-1">Emergency Hotline</div>
+                <div className="text-sm text-muted-foreground mb-1">Available 24/7 for emergencies</div>
+                <a href="tel:+16479068124" className="text-primary font-semibold text-base">(647) 906-8124</a>
+              </div>
             </div>
-            <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 space-y-1 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-1">
-                <MapPin className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <div className="bg-card/80 border border-border rounded-xl p-5 flex items-start gap-4">
+              <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mt-1">
+                <MapPin className="h-7 w-7 text-primary" />
               </div>
-              <div className="text-base font-semibold text-foreground">Service Area</div>
-              <div className="text-xs text-muted-foreground">Serving all over Ontario<br />Mobile service - We come to you!</div>
+              <div>
+                <div className="font-bold text-foreground text-base mb-1">Service Area</div>
+                <div className="text-sm text-muted-foreground">Serving all over Ontario<br />Mobile service - We come to you!</div>
+              </div>
             </div>
-            <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 space-y-1 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-1">
-                <Clock className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <div className="bg-card/80 border border-border rounded-xl p-5 flex items-start gap-4">
+              <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mt-1">
+                <Clock className="h-7 w-7 text-primary" />
               </div>
-              <div className="text-base font-semibold text-foreground">Business Hours</div>
-              <div className="text-xs text-muted-foreground">24/7 Emergency Service<br />Standard Hours: Mon-Sat 8AM-6PM</div>
+              <div>
+                <div className="font-bold text-foreground text-base mb-1">Business Hours</div>
+                <div className="text-sm text-muted-foreground">24/7 Emergency Service<br />Standard Hours: Mon-Sat 8AM-6PM</div>
+              </div>
             </div>
-            <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 space-y-1 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-1">
-                <Mail className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <div className="bg-card/80 border border-border rounded-xl p-5 flex items-start gap-4">
+              <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mt-1">
+                <Mail className="h-7 w-7 text-primary" />
               </div>
-              <div className="text-base font-semibold text-foreground">Email Us</div>
-              <div className="text-xs text-muted-foreground">Get a response within 24 hours</div>
-              <a href="mailto:info@autokeyexpress.ca" className="text-primary hover:text-primary-glow font-semibold text-sm block mt-1">info@autokeyexpress.ca</a>
+              <div>
+                <div className="font-bold text-foreground text-base mb-1">Email Us</div>
+                <div className="text-sm text-muted-foreground mb-1">Get a response within 24 hours</div>
+                <a href="mailto:info@autokeyexpress.ca" className="text-primary font-semibold text-base">info@autokeyexpress.ca</a>
+              </div>
             </div>
           </div>
 
