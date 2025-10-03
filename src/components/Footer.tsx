@@ -8,10 +8,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            {/* <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3">
               <img src={logo} alt="AutoKey Express" className="h-14 w-14 rounded-full object-cover" />
-              <span className="text-lg font-bold text-foreground">AutoKey Express</span>
-            </div> */}
+            </div>
             <p className="text-sm text-muted-foreground">
               Your trusted 24/7 automotive locksmith service. Fast, reliable, and professional.
             </p>

@@ -11,10 +11,9 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          {/* <div className="flex items-center gap-3">
-            <img src={logo} alt="AutoKey Express Logo" className="h-16 w-16 rounded-full object-cover" />
-            <span className="text-xl font-bold text-foreground">AutoKey Express</span>
-          </div> */}
+          <div className="flex items-center gap-3">
+            <img src={logo} className="h-16 w-16 rounded-full object-cover" />
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
