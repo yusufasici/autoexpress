@@ -50,6 +50,9 @@ const Services = () => {
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 whitespace-nowrap">
+            Our Services
+          </h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-4 whitespace-nowrap">
             Automotive • Residential • Commercial
           </h2>
           <p className="text-lg text-muted-foreground">
