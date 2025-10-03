@@ -62,9 +62,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto h-full">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto min-h-[600px]">
           {/* Left Column: Contact Info */}
-          <div className="flex flex-col gap-6 h-full self-stretch">
+          <div className="flex flex-col gap-6 min-h-full flex-1">
             <div className="bg-card/80 border border-border rounded-xl p-5 flex items-start gap-4">
               <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mt-1">
                 <Phone className="h-7 w-7 text-primary" />
@@ -123,9 +123,9 @@ const Contact = () => {
           </div>
 
           {/* Right Column: Quote Form */}
-          <Card className="bg-card border-border h-full flex flex-col justify-between">
-            <CardContent className="p-8 flex flex-col h-full">
-              <h3 className="text-2xl font-bold text-foreground mb-6">Request a Quote</h3>
+          <Card className="bg-card border-border min-h-full flex-1 flex flex-col justify-between">
+            <CardContent className="p-8 flex flex-col flex-1">
+              <h3 className="text-2xl font-bold text-foreground mb-6">Request a Quote or Ask a Question</h3>
               
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
@@ -182,8 +182,7 @@ const Contact = () => {
                     <option value="lockout">Car Lockout</option>
                     <option value="lockout">House Lockout</option>
                     <option value="key-replacement">Key Replacement</option>
-                    <option value="ignition">Ignition Repair</option>
-                    <option value="lockout">Car All Key Lost</option>
+                    <option value="lockout">All Key Lost</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
