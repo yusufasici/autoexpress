@@ -49,51 +49,48 @@ const About = () => {
           </div>
         </div>
 
-  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-              <Clock className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Clock className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
             </div>
-            <div className="text-4xl md:text-5xl font-bold text-primary">24/7</div>
-            <div className="text-sm text-muted-foreground">Service Available</div>
+            <div className="text-xl md:text-2xl font-bold text-primary">24/7</div>
+            <div className="text-xs text-muted-foreground">Service Available</div>
           </div>
-
-          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-              <Zap className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Zap className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
             </div>
-            <div className="text-4xl md:text-5xl font-bold text-primary">&lt;60</div>
-            <div className="text-sm text-muted-foreground">Min Response</div>
+            <div className="text-xl md:text-2xl font-bold text-primary">&lt;60</div>
+            <div className="text-xs text-muted-foreground">Min Response</div>
           </div>
-
-          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-              <MapPin className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <MapPin className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
             </div>
-            <div className="text-2xl md:text-3xl font-bold text-primary">Mobile Service</div>
-            <div className="text-sm text-muted-foreground">We come to you anywhere</div>
+            <div className="text-lg md:text-xl font-bold text-primary">Mobile Service</div>
+            <div className="text-xs text-muted-foreground">We come to you anywhere</div>
           </div>
-
-          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-              <Star className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Star className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
             </div>
-            <div className="text-4xl md:text-5xl font-bold text-primary">500+</div>
-            <div className="text-sm text-muted-foreground">Happy Customers</div>
+            <div className="text-xl md:text-2xl font-bold text-primary">500+</div>
+            <div className="text-xs text-muted-foreground">Happy Customers</div>
           </div>
-
-          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
-              <Award className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Award className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
             </div>
-            <div className="text-2xl md:text-3xl font-bold text-primary">Experienced & Trusted</div>
-            <div className="text-sm text-muted-foreground">Professional Locksmith</div>
+            <div className="text-lg md:text-xl font-bold text-primary">Experienced & Trusted</div>
+            <div className="text-xs text-muted-foreground">Professional Locksmith</div>
           </div>
+        </div>
         </div>
       </div>
     </section>
