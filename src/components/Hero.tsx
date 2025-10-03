@@ -1,4 +1,4 @@
-import { Phone, Clock, Award, DollarSign } from "lucide-react";
+import { Phone, Clock, Award, DollarSign, Shield, Zap, MapPin, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import heroImage1 from "@/assets/hero-locksmith.jpg";
@@ -92,23 +92,41 @@ const Hero = () => {
           </div>
 
           {/* Feature Cards */}
-          <div className="grid md:grid-cols-3 gap-6 pt-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-12">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">
               <Clock className="h-8 w-8 text-primary mx-auto" />
+              <h3 className="font-semibold text-foreground">24/7 Emergency</h3>
+              <p className="text-sm text-muted-foreground">Available around the clock for urgent lockouts</p>
+            </div>
+            
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">
+              <Zap className="h-8 w-8 text-primary mx-auto" />
               <h3 className="font-semibold text-foreground">Fast Response</h3>
-              <p className="text-sm text-muted-foreground">&lt;30 min average arrival time</p>
+              <p className="text-sm text-muted-foreground">&lt;60 min average arrival time</p>
             </div>
             
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">
               <Award className="h-8 w-8 text-primary mx-auto" />
               <h3 className="font-semibold text-foreground">Licensed & Insured</h3>
-              <p className="text-sm text-muted-foreground">Certified locksmiths</p>
+              <p className="text-sm text-muted-foreground">Certified professional locksmiths</p>
             </div>
             
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">
               <DollarSign className="h-8 w-8 text-primary mx-auto" />
               <h3 className="font-semibold text-foreground">Upfront Pricing</h3>
               <p className="text-sm text-muted-foreground">No hidden fees or surprises</p>
+            </div>
+            
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">
+              <MapPin className="h-8 w-8 text-primary mx-auto" />
+              <h3 className="font-semibold text-foreground">Mobile Service</h3>
+              <p className="text-sm text-muted-foreground">We come to you anywhere in Ontario</p>
+            </div>
+            
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">
+              <Star className="h-8 w-8 text-primary mx-auto" />
+              <h3 className="font-semibold text-foreground">5-Star Rated</h3>
+              <p className="text-sm text-muted-foreground">Trusted by thousands of customers</p>
             </div>
           </div>
 
