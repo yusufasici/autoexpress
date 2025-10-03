@@ -34,7 +34,7 @@ const Header = () => {
                 href="https://instagram.com/expressautokey" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-primary transition-colors"
+                className="text-primary hover:text-primary-glow transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
@@ -43,7 +43,7 @@ const Header = () => {
                 href="https://facebook.com/s" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-primary transition-colors"
+                className="text-primary hover:text-primary-glow transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
@@ -102,7 +102,7 @@ const Header = () => {
                 href="https://instagram.com/expressautokey" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-primary transition-colors"
+                className="text-primary hover:text-primary-glow transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-6 w-6" />
@@ -111,7 +111,7 @@ const Header = () => {
                 href="https://facebook.com/s" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-primary transition-colors"
+                className="text-primary hover:text-primary-glow transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-6 w-6" />
