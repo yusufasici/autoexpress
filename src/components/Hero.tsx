@@ -17,10 +17,7 @@ const Hero = () => {
   
   const heroImages = [
     heroImage1,
-    heroImage3,
-    heroImage7,
     heroImage8,
-    heroImage9,
     heroImage6,
     heroImage4
   ];
@@ -136,21 +133,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Carousel Indicators */}
-          <div className="flex justify-center space-x-2 pt-8">
-            {heroImages.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentImageIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentImageIndex 
-                    ? 'bg-primary scale-125' 
-                    : 'bg-foreground/30 hover:bg-foreground/50'
-                }`}
-                aria-label={`Go to image ${index + 1}`}
-              />
-            ))}
-          </div>
+          {/* Carousel Indicators removed to prevent manual switching */}
         </div>
       </div>
     </section>
