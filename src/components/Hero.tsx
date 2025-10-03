@@ -7,7 +7,7 @@ import heroImage3 from "@/assets/lockout-service.jpg";
 import heroImage4 from "@/assets/residential-lock.jpg";
 import heroImage5 from "@/assets/commercial-access.jpg";
 import heroImage6 from "@/assets/safe-vault.jpg";
-import logomascot from "@/assets/logomascot.png";
+import logomascot from "@/assets/logomascot2.png";
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
