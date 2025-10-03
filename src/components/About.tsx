@@ -1,4 +1,4 @@
-import { Award, Wrench, DollarSign } from "lucide-react";
+import { Award, Wrench, DollarSign, Clock, Zap, Star, MapPin, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -49,34 +49,60 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <Card className="bg-card border-border text-center p-6">
-            <CardContent className="p-0 space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-primary">10+</div>
-              <div className="text-sm text-muted-foreground">Years Experience</div>
-            </CardContent>
-          </Card>
+  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Clock className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">Experienced & Trusted</div>
+            <div className="text-sm text-muted-foreground">Professional Locksmith</div>
+          </div>
 
-          <Card className="bg-card border-border text-center p-6">
-            <CardContent className="p-0 space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-primary">&lt;30</div>
-              <div className="text-sm text-muted-foreground">Min Response</div>
-            </CardContent>
-          </Card>
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Zap className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div className="text-4xl md:text-5xl font-bold text-primary">&lt;60</div>
+            <div className="text-sm text-muted-foreground">Min Response</div>
+          </div>
 
-          <Card className="bg-card border-border text-center p-6">
-            <CardContent className="p-0 space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-primary">500+</div>
-              <div className="text-sm text-muted-foreground">Happy Customers</div>
-            </CardContent>
-          </Card>
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <MapPin className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">Mobile Service</div>
+            <div className="text-sm text-muted-foreground">We come to you anywhere</div>
+          </div>
 
-          <Card className="bg-card border-border text-center p-6">
-            <CardContent className="p-0 space-y-2">
-              <div className="text-4xl md:text-5xl font-bold text-primary">24/7</div>
-              <div className="text-sm text-muted-foreground">Service Available</div>
-            </CardContent>
-          </Card>
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Star className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div className="text-4xl md:text-5xl font-bold text-primary">500+</div>
+            <div className="text-sm text-muted-foreground">Happy Customers</div>
+          </div>
+
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <ShieldCheck className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div className="text-2xl md:text-3xl font-bold text-primary">Licensed, Insured & Certified</div>
+            <div className="text-sm text-muted-foreground">Your security is our priority</div>
+          </div>
+
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Award className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div className="text-4xl md:text-5xl font-bold text-primary">24/7</div>
+            <div className="text-sm text-muted-foreground">Service Available</div>
+          </div>
         </div>
       </div>
     </section>
