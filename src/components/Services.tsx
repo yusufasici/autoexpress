@@ -49,16 +49,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-primary/10 px-6 py-2 rounded-full mb-6">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-sm font-medium text-primary">Professional Locksmith Services</span>
+            <span className="text-sm font-medium text-primary">Our Services</span>
           </div>
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-primary via-primary-glow to-primary bg-clip-text text-transparent">
-              Our Services
-            </span>
-          </h2>
           
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mb-6">
             <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-lg border border-border">
