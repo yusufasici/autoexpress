@@ -56,19 +56,19 @@ const Services = () => {
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mb-6">
-            <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-lg border border-border">
-              <Car className="h-5 w-5 text-primary" />
-              <span className="font-semibold text-foreground">Automotive</span>
+            <div className="flex items-center gap-3 bg-card/50 px-6 py-3 rounded-xl border border-border">
+              <Car className="h-6 w-6 text-primary" />
+              <span className="text-lg font-semibold text-foreground">Automotive</span>
             </div>
-            <div className="text-2xl text-primary">•</div>
-            <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-lg border border-border">
-              <Home className="h-5 w-5 text-primary" />
-              <span className="font-semibold text-foreground">Residential</span>
+            <div className="text-3xl text-primary">•</div>
+            <div className="flex items-center gap-3 bg-card/50 px-6 py-3 rounded-xl border border-border">
+              <Home className="h-6 w-6 text-primary" />
+              <span className="text-lg font-semibold text-foreground">Residential</span>
             </div>
-            <div className="text-2xl text-primary">•</div>
-            <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-lg border border-border">
-              <Building2 className="h-5 w-5 text-primary" />
-              <span className="font-semibold text-foreground">Commercial</span>
+            <div className="text-3xl text-primary">•</div>
+            <div className="flex items-center gap-3 bg-card/50 px-6 py-3 rounded-xl border border-border">
+              <Building2 className="h-6 w-6 text-primary" />
+              <span className="text-lg font-semibold text-foreground">Commercial</span>
             </div>
           </div>
           
