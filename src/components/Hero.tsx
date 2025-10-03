@@ -26,7 +26,7 @@ const Hero = () => {
       setCurrentImageIndex((prevIndex) => 
         prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // Change image every 4 seconds
+    }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, [heroImages.length]);
@@ -53,7 +53,7 @@ const Hero = () => {
           
           {/* Logo Mascot*/}
           <div className="flex items-center justify-center">
-            <img src={logomascot} className="h-56 w-80 object-cover" />
+            <img src={logomascot} className="h-56 w-80 opacity-75 object-cover" />
           </div>
 
           {/* Subtitle */}
