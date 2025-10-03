@@ -1,4 +1,4 @@
-import { Key, Lock, Home, Building2 } from "lucide-react";
+import { Key, Car, Home, Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import lockoutImage from "@/assets/lockout-service.jpg";
 import residentialLockImage from "@/assets/residential-lock.jpg";
@@ -7,7 +7,7 @@ import commercialAccessImage from "@/assets/commercial-access.jpg";
 const Services = () => {
   const services = [
     {
-      icon: Lock,
+      icon: Car,
       title: "Automotive Locksmithing",
       description: "On-site car key services and emergency help to get you back on the road fast.",
       image: lockoutImage,
@@ -49,13 +49,15 @@ const Services = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-3 bg-primary/10 px-8 py-3 rounded-full mb-6">
+          <div className="inline-flex items-center gap-4 bg-primary/10 px-10 py-4 rounded-full mb-6">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
             <span className="text-lg md:text-xl font-semibold text-primary">Our Services</span>
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mb-6">
             <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-lg border border-border">
-              <Lock className="h-5 w-5 text-primary" />
+              <Car className="h-5 w-5 text-primary" />
               <span className="font-semibold text-foreground">Automotive</span>
             </div>
             <div className="text-2xl text-primary">•</div>
@@ -71,7 +73,7 @@ const Services = () => {
           </div>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Full‑service locksmithing for vehicles, homes, and businesses — available 24/7.
+            24/7 mobile locksmiths for cars, homes, and commercial properties.          
           </p>
         </div>
 
