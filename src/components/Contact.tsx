@@ -54,20 +54,17 @@ const Contact = () => {
         <div className="max-w-2xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-6 bg-primary/10 px-12 py-5 rounded-full mb-6 justify-center">
             <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-2xl md:text-3xl font-bold text-primary">Contact Us</span>
+            <span className="text-2xl md:text-3xl font-bold text-primary">Get In Touch</span>
             <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Get In Touch
-          </h2>
           <p className="text-lg text-muted-foreground">
-            Need immediate assistance? Call us now or request a free quote below.
+            Need immediate assistance? Call/Text us now or request a free quote below.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left Column: Contact Info */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-1 gap-4">
             <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 space-y-1 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-1">
