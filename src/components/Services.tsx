@@ -1,7 +1,7 @@
 import { Key, Car, Home, Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import lockoutImage from "@/assets/lockout-service.jpg";
-import residentialLockImage from "@/assets/residential-lock.jpg";
+import carkeys from "@/assets/car-keys.jpg";
+import residential from "@/assets/residential.jpg";
 import commercialAccessImage from "@/assets/commercial-access.jpg";
 
 const Services = () => {
@@ -10,7 +10,7 @@ const Services = () => {
       icon: Car,
       title: "Automotive Locksmithing",
       description: "On-site car key services and emergency help to get you back on the road fast.",
-      image: lockoutImage,
+      image: carkeys,
       features: [
         "Car lockout service (damage-free)",
         "Key replacement & key fob programming",
@@ -22,7 +22,7 @@ const Services = () => {
       icon: Home,
       title: "Residential Locksmithing",
       description: "Complete home lock & security solutions for peace of mind.",
-      image: residentialLockImage,
+      image: residential,
       features: [
         "House lockouts • Rekeying",
         "Lock installation & repair",
@@ -49,10 +49,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <div className="inline-flex items-center gap-4 bg-primary/10 px-10 py-4 rounded-full mb-6">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span className="text-lg md:text-xl font-semibold text-primary">Our Services</span>
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+          <div className="inline-flex items-center gap-6 bg-primary/10 px-12 py-5 rounded-full mb-8">
+            <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+            <span className="text-2xl md:text-3xl font-bold text-primary">Our Services</span>
+            <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mb-6">
