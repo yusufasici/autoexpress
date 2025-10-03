@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} className="h-32 w-88 object-cover" />
+            <img src={logo} className="object-cover" style={{ height: '75%', width: '75%' }} />
           </div>
 
           {/* Desktop Navigation */}
