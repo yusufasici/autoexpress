@@ -23,7 +23,7 @@ const Hero = () => {
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto">
-            Fast, Reliable 24/7 Car Key & Locksmith Services. We Come To You!
+            Automotive • Residential • Commercial • Locksmith Services
           </p>
 
           {/* CTA Button */}
