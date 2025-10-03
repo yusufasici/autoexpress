@@ -24,6 +24,7 @@ const Hero = () => {
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto">
             Automotive • Residential • Commercial • Locksmith Services
+            Fast - Reliable - Licenced - Insured - Certified - 24/7 Emergency Service
           </p>
 
           {/* CTA Button */}
