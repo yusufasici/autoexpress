@@ -51,7 +51,12 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-16">
+        <div className="max-w-2xl mx-auto text-center mb-12">
+          <div className="inline-flex items-center gap-6 bg-primary/10 px-12 py-5 rounded-full mb-6 justify-center">
+            <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+            <span className="text-2xl md:text-3xl font-bold text-primary">Contact Us</span>
+            <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             Get In Touch
           </h2>
@@ -62,66 +67,41 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Left Column: Contact Info */}
-          <div className="space-y-6">
-            <Card className="bg-card border-border hover:shadow-[var(--shadow-elegant)] transition-shadow">
-              <CardContent className="p-6 flex items-start gap-4">
-                <div className="p-3 bg-primary/10 rounded-lg flex-shrink-0">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Emergency Hotline</h3>
-                  <p className="text-muted-foreground mb-2">Available 24/7 for emergencies</p>
-                  <a href="tel:+16479068124" className="text-primary hover:text-primary-glow font-semibold">
-                    (647) 906-8124
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-border hover:shadow-[var(--shadow-elegant)] transition-shadow">
-              <CardContent className="p-6 flex items-start gap-4">
-                <div className="p-3 bg-primary/10 rounded-lg flex-shrink-0">
-                  <MapPin className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Service Area</h3>
-                  <p className="text-muted-foreground">
-                    Serving all over Ontario<br />
-                    Mobile service - We come to you!
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-border hover:shadow-[var(--shadow-elegant)] transition-shadow">
-              <CardContent className="p-6 flex items-start gap-4">
-                <div className="p-3 bg-primary/10 rounded-lg flex-shrink-0">
-                  <Clock className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Business Hours</h3>
-                  <p className="text-muted-foreground">
-                    24/7 Emergency Service<br />
-                    Standard Hours: Mon-Sat 8AM-6PM
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-border hover:shadow-[var(--shadow-elegant)] transition-shadow">
-              <CardContent className="p-6 flex items-start gap-4">
-                <div className="p-3 bg-primary/10 rounded-lg flex-shrink-0">
-                  <Mail className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
-                  <p className="text-muted-foreground mb-2">Get a response within 24 hours</p>
-                  <a href="mailto:info@autokeyexpress.ca" className="text-primary hover:text-primary-glow">
-                    info@autokeyexpress.ca
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 space-y-1 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-1">
+                <Phone className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
+              </div>
+              <div className="text-base font-semibold text-foreground">Emergency Hotline</div>
+              <div className="text-xs text-muted-foreground">Available 24/7 for emergencies</div>
+              <a href="tel:+16479068124" className="text-primary hover:text-primary-glow font-semibold text-sm block mt-1">(647) 906-8124</a>
+            </div>
+            <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 space-y-1 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-1">
+                <MapPin className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
+              </div>
+              <div className="text-base font-semibold text-foreground">Service Area</div>
+              <div className="text-xs text-muted-foreground">Serving all over Ontario<br />Mobile service - We come to you!</div>
+            </div>
+            <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 space-y-1 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-1">
+                <Clock className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
+              </div>
+              <div className="text-base font-semibold text-foreground">Business Hours</div>
+              <div className="text-xs text-muted-foreground">24/7 Emergency Service<br />Standard Hours: Mon-Sat 8AM-6PM</div>
+            </div>
+            <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-4 space-y-1 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-1">
+                <Mail className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
+              </div>
+              <div className="text-base font-semibold text-foreground">Email Us</div>
+              <div className="text-xs text-muted-foreground">Get a response within 24 hours</div>
+              <a href="mailto:info@autokeyexpress.ca" className="text-primary hover:text-primary-glow font-semibold text-sm block mt-1">info@autokeyexpress.ca</a>
+            </div>
           </div>
 
           {/* Right Column: Quote Form */}
