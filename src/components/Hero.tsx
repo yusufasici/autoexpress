@@ -1,7 +1,7 @@
 import { Phone, Clock, Award, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-locksmith.jpg";
-import logomascot from "@/assets/logo.png";
+import logomascot from "@/assets/logomascot.png";
 
 const Hero = () => {
   return (
@@ -17,14 +17,10 @@ const Hero = () => {
       {/* Content */}
       <div className="container relative z-10 px-4">
         <div className="max-w-3xl mx-auto text-center space-y-8">
-          {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
-            AutoKey Express
-          </h1>
           
-          {/* Logo */}
-          <div className="flex items-center gap-3">
-            <img src={logomascot} className="h-56 w-90 object-cover" />
+          {/* Logo Mascot*/}
+          <div className="flex items-center justify-center">
+            <img src={logomascot} className="h-56 w-80 object-cover" />
           </div>
 
           {/* Subtitle */}
