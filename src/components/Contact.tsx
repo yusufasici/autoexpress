@@ -29,8 +29,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Emergency Hotline</h3>
                   <p className="text-muted-foreground mb-2">Available 24/7 for emergencies</p>
-                  <a href="tel:+1234567890" className="text-primary hover:text-primary-glow font-semibold">
-                    (123) 456-7890
+                  <a href="tel:+16479068124" className="text-primary hover:text-primary-glow font-semibold">
+                    (647) 906-8124
                   </a>
                 </div>
               </CardContent>
@@ -44,8 +44,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Service Area</h3>
                   <p className="text-muted-foreground">
-                    Serving all of Los Angeles County<br />
-                    Mobile service - we come to you!
+                    Serving all over Ontario<br />
+                    Mobile service - We come to you!
                   </p>
                 </div>
               </CardContent>
@@ -60,7 +60,7 @@ const Contact = () => {
                   <h3 className="font-semibold text-foreground mb-1">Business Hours</h3>
                   <p className="text-muted-foreground">
                     24/7 Emergency Service<br />
-                    Standard Hours: Mon-Fri 8AM-6PM
+                    Standard Hours: Mon-Sat 8AM-6PM
                   </p>
                 </div>
               </CardContent>
@@ -107,7 +107,7 @@ const Contact = () => {
                   <Input 
                     id="phone"
                     type="tel"
-                    placeholder="(123) 456-7890" 
+                    placeholder="(647) 906-8124" 
                     required
                     className="bg-input border-border text-foreground"
                   />
@@ -136,8 +136,10 @@ const Contact = () => {
                   >
                     <option value="">Select a service</option>
                     <option value="lockout">Car Lockout</option>
+                    <option value="lockout">House Lockout</option>
                     <option value="key-replacement">Key Replacement</option>
                     <option value="ignition">Ignition Repair</option>
+                    <option value="lockout">Car All Key Lost</option>
                     <option value="other">Other</option>
                   </select>
                 </div>

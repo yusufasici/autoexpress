@@ -33,9 +33,9 @@ const Hero = () => {
               className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]"
               asChild
             >
-              <a href="tel:+1234567890">
+              <a href="tel:+16479068124">
                 <Phone className="h-6 w-6" />
-                Call Now: (123) 456-7890
+                Call Now: (647) 906-8124
               </a>
             </Button>
             <div className="flex items-center gap-2 text-sm text-foreground/70">
@@ -49,13 +49,13 @@ const Hero = () => {
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">
               <Clock className="h-8 w-8 text-primary mx-auto" />
               <h3 className="font-semibold text-foreground">Fast Response</h3>
-              <p className="text-sm text-muted-foreground">&lt;20 min average arrival time</p>
+              <p className="text-sm text-muted-foreground">&lt;30 min average arrival time</p>
             </div>
             
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">
               <Award className="h-8 w-8 text-primary mx-auto" />
               <h3 className="font-semibold text-foreground">Licensed & Insured</h3>
-              <p className="text-sm text-muted-foreground">Certified automotive locksmiths</p>
+              <p className="text-sm text-muted-foreground">Certified locksmiths</p>
             </div>
             
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">

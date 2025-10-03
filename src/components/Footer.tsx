@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="AutoKey Express" className="h-10 w-10 rounded-full object-cover" />
+              <img src={logo} alt="AutoKey Express" className="h-14 w-14 rounded-full object-cover" />
               <span className="text-lg font-bold text-foreground">AutoKey Express</span>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -50,8 +50,8 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="tel:+1234567890" className="hover:text-primary transition-colors">
-                  (123) 456-7890
+                <a href="tel:+16479068124" className="hover:text-primary transition-colors">
+                  (647) 906-8124
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -62,7 +62,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span>Los Angeles County, CA</span>
+                <span>Ontario, Canada</span>
               </li>
             </ul>
           </div>
@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li className="mt-4">
                 <div className="font-medium text-foreground">Standard Hours:</div>
-                <div>Monday - Friday</div>
+                <div>Monday - Saturday</div>
                 <div>8:00 AM - 6:00 PM</div>
               </li>
             </ul>

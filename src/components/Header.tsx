@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} alt="AutoKey Express Logo" className="h-12 w-12 rounded-full object-cover" />
+            <img src={logo} alt="AutoKey Express Logo" className="h-16 w-16 rounded-full object-cover" />
             <span className="text-xl font-bold text-foreground">AutoKey Express</span>
           </div>
 
@@ -31,7 +31,7 @@ const Header = () => {
               className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
               asChild
             >
-              <a href="tel:+1234567890">
+              <a href="tel:+16479068124">
                 <Phone className="h-4 w-4" />
                 Emergency Call
               </a>
@@ -76,7 +76,7 @@ const Header = () => {
               className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
               asChild
             >
-              <a href="tel:+1234567890">
+              <a href="tel:+16479068124">
                 <Phone className="h-4 w-4" />
                 Emergency Call
               </a>

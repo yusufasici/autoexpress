@@ -27,10 +27,10 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
-                    Licensed & Certified
+                    Licensed & Certified & Insured
                   </h3>
                   <p className="text-muted-foreground">
-                    All our technicians are fully licensed and certified automotive locksmiths.
+                    All our technicians are fully licensed and certified locksmiths.
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const About = () => {
 
             <Card className="bg-card border-border text-center p-6">
               <CardContent className="p-0 space-y-2">
-                <div className="text-5xl font-bold text-primary">5000+</div>
+                <div className="text-5xl font-bold text-primary">500+</div>
                 <div className="text-sm text-muted-foreground">Happy Customers</div>
               </CardContent>
             </Card>
