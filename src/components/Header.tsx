@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone, Instagram, Facebook, Twitter } from "lucide-react";
+import { Menu, X, Phone, Instagram, Facebook, Twitter, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo2.png";
 
@@ -49,15 +49,31 @@ const Header = () => {
               </a>
             </div>
             
-            <Button 
-              className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
-              asChild
-            >
-              <a href="tel:+16479068124">
-                <Phone className="h-4 w-4" />
-                Emergency Call
-              </a>
-            </Button>
+            <div className="flex items-center gap-3">
+              <Button 
+                className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
+                asChild
+              >
+                <a href="tel:+16479068124">
+                  <Phone className="h-4 w-4" />
+                  Emergency Call
+                </a>
+              </Button>
+              <Button
+                className="bg-[#25D366] hover:bg-[#20bf5a] text-black font-semibold gap-2"
+                asChild
+              >
+                <a
+                  href="https://wa.me/16479068124?text=Hi%20AutoKey%20Express%2C%20I%20need%20help"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  WhatsApp
+                </a>
+              </Button>
+            </div>
           </nav>
 
           {/* Mobile Menu Toggle */}
@@ -117,15 +133,31 @@ const Header = () => {
               </a>
             </div>
             
-            <Button 
-              className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
-              asChild
-            >
-              <a href="tel:+16479068124">
-                <Phone className="h-4 w-4" />
-                Emergency Call
-              </a>
-            </Button>
+            <div className="grid grid-cols-2 gap-3">
+              <Button 
+                className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
+                asChild
+              >
+                <a href="tel:+16479068124">
+                  <Phone className="h-4 w-4" />
+                  Call
+                </a>
+              </Button>
+              <Button 
+                className="w-full bg-[#25D366] hover:bg-[#20bf5a] text-black font-semibold gap-2"
+                asChild
+              >
+                <a 
+                  href="https://wa.me/16479068124?text=Hi%20AutoKey%20Express%2C%20I%20need%20help"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  WhatsApp
+                </a>
+              </Button>
+            </div>
           </nav>
         )}
       </div>
