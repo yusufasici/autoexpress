@@ -34,7 +34,7 @@ const Header = () => {
                 href="https://instagram.com/expressautokey" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-pink-500 transition-colors"
+                className="text-foreground/60 hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
@@ -43,7 +43,7 @@ const Header = () => {
                 href="https://facebook.com/s" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-blue-600 transition-colors"
+                className="text-foreground/60 hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
@@ -99,31 +99,22 @@ const Header = () => {
             {/* Social Media Icons - Mobile */}
             <div className="flex items-center justify-center gap-4 py-2">
               <a 
-                href="https://instagram.com/autokeyexpress" 
+                href="https://instagram.com/expressautokey" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-pink-500 transition-colors"
+                className="text-foreground/60 hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-6 w-6" />
               </a>
               <a 
-                href="https://facebook.com/autokeyexpress" 
+                href="https://facebook.com/s" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-blue-600 transition-colors"
+                className="text-foreground/60 hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-6 w-6" />
-              </a>
-              <a 
-                href="https://twitter.com/autokeyexpress" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-foreground/60 hover:text-blue-400 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-6 w-6" />
               </a>
             </div>
             
