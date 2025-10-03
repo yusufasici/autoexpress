@@ -24,7 +24,7 @@ const Hero = () => {
   }, [heroImages.length]);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Images with Carousel */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
@@ -41,7 +41,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container relative z-10 px-4">
-        <div className="max-w-3xl mx-auto text-center space-y-4">
+        <div className="max-w-3xl mx-auto text-center space-y-3">
           
           {/* Logo Mascot*/}
           <div className="flex items-center justify-center">
@@ -55,7 +55,7 @@ const Hero = () => {
           </p>
 
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button 
               size="lg"
               className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]"
@@ -86,7 +86,7 @@ const Hero = () => {
           </div>
 
           {/* Feature Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3">
               <Clock className="h-8 w-8 text-primary mx-auto" />
               <h3 className="font-semibold text-foreground">24/7 Emergency</h3>
