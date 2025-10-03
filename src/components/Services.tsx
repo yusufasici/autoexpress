@@ -1,6 +1,6 @@
 import { Key, Car, Home, Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import carkeys from "@/assets/car-keys.jpg";
+import carkeys from "@/assets/carkeys.jpg";
 import residential from "@/assets/residential.jpg";
 import commercialAccessImage from "@/assets/commercial-access.jpg";
 
