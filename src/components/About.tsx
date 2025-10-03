@@ -4,114 +4,87 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-secondary/30">
+    <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column: Content */}
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-6 bg-primary/10 px-12 py-5 rounded-full mb-6 justify-center">
-              <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-              <span className="text-2xl md:text-3xl font-bold text-primary">About Us</span>
-              <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-            </div>
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <div className="inline-flex items-center gap-6 bg-primary/10 px-12 py-5 rounded-full mb-6 justify-center">
+            <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+            <span className="text-2xl md:text-3xl font-bold text-primary">About Us</span>
+            <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+          </div>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Why Choose AutoKey Express?
-            </h2>
-            
-            <p className="text-lg text-muted-foreground">
-              With over 10 years of experience in automotive locksmith services, we're your trusted partner for all car key emergencies. Our certified technicians use the latest technology to provide fast, reliable, and affordable solutions.
-            </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Why AutoKey Express?</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            We provide fast, professional locksmith services across automotive, residential and commercial sectors. Our technicians are licensed, fully insured, and equipped with modern tools to deliver damage-free results—anytime you need us.
+          </p>
 
-            {/* Features */}
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Award className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    Licensed & Certified & Insured
-                  </h3>
-                  <p className="text-muted-foreground">
-                    All our technicians are fully licensed and certified locksmiths.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Wrench className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    Modern Equipment
-                  </h3>
-                  <p className="text-muted-foreground">
-                    We use the latest tools and technology for precise, damage-free service.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <DollarSign className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    Transparent Pricing
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Upfront quotes with no hidden fees or surprise charges.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <Button 
-              size="lg"
-              className="bg-primary hover:bg-primary-glow text-primary-foreground"
-            >
-              Learn More About Us
+          <div className="flex items-center justify-center gap-4 mt-6">
+            <Button size="lg" className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold px-6 py-3">
+              Learn More
+            </Button>
+            <Button size="lg" className="bg-card/50 text-foreground border border-border px-6 py-3">
+              Contact Us
             </Button>
           </div>
+        </div>
 
-          {/* Right Column: Stats */}
-          <div className="grid grid-cols-2 gap-6">
-            <Card className="bg-card border-border text-center p-6">
-              <CardContent className="p-0 space-y-2">
-                <div className="text-5xl font-bold text-primary">10+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-border text-center p-6">
-              <CardContent className="p-0 space-y-2">
-                <div className="text-5xl font-bold text-primary">&lt;20</div>
-                <div className="text-sm text-muted-foreground">Minute Response</div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-border text-center p-6">
-              <CardContent className="p-0 space-y-2">
-                <div className="text-5xl font-bold text-primary">500+</div>
-                <div className="text-sm text-muted-foreground">Happy Customers</div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-border text-center p-6">
-              <CardContent className="p-0 space-y-2">
-                <div className="text-5xl font-bold text-primary">24/7</div>
-                <div className="text-sm text-muted-foreground">Service Available</div>
-              </CardContent>
-            </Card>
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Award className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <h3 className="text-xl font-semibold text-foreground text-center">Licensed & Certified</h3>
+            <p className="text-sm text-muted-foreground text-center">Trained technicians with certifications and full insurance for peace of mind.</p>
           </div>
+
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Wrench className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <h3 className="text-xl font-semibold text-foreground text-center">Modern Tools</h3>
+            <p className="text-sm text-muted-foreground text-center">We use the latest equipment for damage-free key extraction, programming and installations.</p>
+          </div>
+
+          <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <DollarSign className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <h3 className="text-xl font-semibold text-foreground text-center">Transparent Pricing</h3>
+            <p className="text-sm text-muted-foreground text-center">Upfront pricing with honest estimates and no surprise fees.</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <Card className="bg-card border-border text-center p-6">
+            <CardContent className="p-0 space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-primary">10+</div>
+              <div className="text-sm text-muted-foreground">Years Experience</div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-card border-border text-center p-6">
+            <CardContent className="p-0 space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-primary">&lt;30</div>
+              <div className="text-sm text-muted-foreground">Min Response</div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-card border-border text-center p-6">
+            <CardContent className="p-0 space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-primary">500+</div>
+              <div className="text-sm text-muted-foreground">Happy Customers</div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-card border-border text-center p-6">
+            <CardContent className="p-0 space-y-2">
+              <div className="text-4xl md:text-5xl font-bold text-primary">24/7</div>
+              <div className="text-sm text-muted-foreground">Service Available</div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
