@@ -1,6 +1,7 @@
 import { Phone, Clock, Award, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-locksmith.jpg";
+import logomascot from "@/assets/logo.png";
 
 const Hero = () => {
   return (
@@ -21,6 +22,11 @@ const Hero = () => {
             AutoKey Express
           </h1>
           
+          {/* Logo */}
+          <div className="flex items-center gap-3">
+            <img src={logomascot} className="h-56 w-90 object-cover" />
+          </div>
+
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto">
             Automotive • Residential • Commercial • Locksmith Services
