@@ -1,4 +1,4 @@
-import { Phone, Clock, Award, DollarSign } from "lucide-react";
+import { Phone, Clock, Award, DollarSign, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import heroImage1 from "@/assets/hero-locksmith.jpg";
@@ -72,10 +72,21 @@ const Hero = () => {
                 Call Now: (647) 906-8124
               </a>
             </Button>
-            <div className="flex items-center gap-2 text-sm text-foreground/70">
-              <Clock className="h-4 w-4" />
-              <span>24/7 Emergency Service</span>
-            </div>
+            <Button 
+              size="lg"
+              className="bg-[#25D366] hover:bg-[#20bf5a] text-black font-bold text-lg px-8 py-6 gap-3"
+              asChild
+            >
+              <a 
+                href="https://wa.me/16479068124?text=Hi%20AutoKey%20Express%2C%20I%20need%20help%20with"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle className="h-6 w-6" />
+                Send a WhatsApp Message
+              </a>
+            </Button>
           </div>
 
           {/* Feature Cards */}
