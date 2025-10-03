@@ -2,11 +2,10 @@ import { Phone, Clock, Award, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import heroImage1 from "@/assets/hero-locksmith.jpg";
-import heroImage2 from "@/assets/key-replacement.jpg";
-import heroImage3 from "@/assets/lockout-service.jpg";
-import heroImage4 from "@/assets/residential-lock.jpg";
-import heroImage5 from "@/assets/commercial-access.jpg";
-import heroImage6 from "@/assets/safe-vault.jpg";
+import heroImage2 from "@/assets/hero-locksmith2.jpg";
+import heroImage3 from "@/assets/hero-locksmith3.jpg";
+import heroImage4 from "@/assets/hero-locksmith4.jpg";
+import heroImage5 from "@/assets/hero-locksmith5.jpg";
 import logomascot from "@/assets/logomascot2.png";
 
 const Hero = () => {
@@ -17,8 +16,7 @@ const Hero = () => {
     heroImage2,
     heroImage3,
     heroImage4,
-    heroImage5,
-    heroImage6
+    heroImage5
   ];
 
   useEffect(() => {
