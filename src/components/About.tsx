@@ -1,4 +1,4 @@
-import { Award, Clock, Zap } from "lucide-react";
+import { Award, Wrench, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -23,26 +23,29 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <Clock className="h-8 w-8 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="font-semibold text-foreground">24/7 Emergency</h3>
-            <p className="text-sm text-muted-foreground">Available around the clock for urgent lockouts</p>
-            <div className="absolute bottom-4 right-4 w-2 h-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Award className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <h3 className="text-xl font-semibold text-foreground text-center">Licensed & Certified</h3>
+            <p className="text-sm text-muted-foreground text-center">Trained technicians with certifications and full insurance for peace of mind.</p>
           </div>
 
           <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <Zap className="h-8 w-8 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="font-semibold text-foreground">Fast Response</h3>
-            <p className="text-sm text-muted-foreground">&lt;60 min average arrival time</p>
-            <div className="absolute bottom-4 right-4 w-2 h-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <Wrench className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <h3 className="text-xl font-semibold text-foreground text-center">Modern Tools</h3>
+            <p className="text-sm text-muted-foreground text-center">We use the latest equipment for damage-free key extraction, programming and installations.</p>
           </div>
 
           <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <Award className="h-8 w-8 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="font-semibold text-foreground">Licensed & Insured</h3>
-            <p className="text-sm text-muted-foreground">Certified professional locksmiths</p>
-            <div className="absolute bottom-4 right-4 w-2 h-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto">
+              <DollarSign className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <h3 className="text-xl font-semibold text-foreground text-center">Transparent Pricing</h3>
+            <p className="text-sm text-muted-foreground text-center">Upfront pricing with honest estimates and no surprise fees.</p>
           </div>
         </div>
 
