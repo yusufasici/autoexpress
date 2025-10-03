@@ -49,11 +49,11 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container relative z-10 px-4">
-        <div className="max-w-3xl mx-auto text-center space-y-8">
+        <div className="max-w-3xl mx-auto text-center space-y-4">
           
           {/* Logo Mascot*/}
           <div className="flex items-center justify-center">
-            <img src={logomascot} className="h-88 w-124 opacity-75 object-cover" />
+            <img src={logomascot} className="h-64 w-80 opacity-75 object-cover" />
           </div>
 
           {/* Subtitle */}
