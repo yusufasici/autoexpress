@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="AutoKey Express" className="h-14 w-14 rounded-full object-cover" />
+              <img src={logo} alt="AutoKey Express" className="h-20 w-20 rounded-full object-cover" />
             </div>
             <p className="text-sm text-muted-foreground">
               Your trusted 24/7 automotive locksmith service. Fast, reliable, and professional.
