@@ -60,11 +60,11 @@ const Header = () => {
                 </a>
               </Button>
               <Button
-                className="bg-[#25D366] hover:bg-[#20bf5a] text-black font-semibold gap-2"
+                className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
                 asChild
               >
                 <a
-                  href="https://wa.me/16479068124?text=Hi%20AutoKey%20Express%2C%20I%20need%20help"
+                  href="https://wa.me/16479068124?text=Hi%20AutoKey%20Express%2C%20I%20need%20help%20with"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"
@@ -144,11 +144,11 @@ const Header = () => {
                 </a>
               </Button>
               <Button 
-                className="w-full bg-[#25D366] hover:bg-[#20bf5a] text-black font-semibold gap-2"
+                className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
                 asChild
               >
                 <a 
-                  href="https://wa.me/16479068124?text=Hi%20AutoKey%20Express%2C%20I%20need%20help"
+                  href="https://wa.me/16479068124?text=Hi%20AutoKey%20Express%2C%20I%20need%20help%20with"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="WhatsApp"

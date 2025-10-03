@@ -64,7 +64,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
               size="lg"
-              className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]"
+              className="bg-primary hover:bg-primary-glwo text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]"
               asChild
             >
               <a href="tel:+16479068124">
@@ -74,7 +74,7 @@ const Hero = () => {
             </Button>
             <Button 
               size="lg"
-              className="bg-[#25D366] hover:bg-[#20bf5a] text-black font-bold text-lg px-8 py-6 gap-3"
+              className="bg-primary hover:bg-primary-glwo text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]"
               asChild
             >
               <a 
