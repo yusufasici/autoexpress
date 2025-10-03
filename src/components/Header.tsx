@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} className="h-32 w-64 object-cover" />
+            <img src={logo} className="h-32 w-88 object-cover" />
           </div>
 
           {/* Desktop Navigation */}
