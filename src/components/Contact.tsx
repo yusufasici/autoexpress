@@ -74,8 +74,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email Us</h3>
                   <p className="text-muted-foreground mb-2">Get a response within 24 hours</p>
-                  <a href="mailto:info@autokeyexpress.com" className="text-primary hover:text-primary-glow">
-                    info@autokeyexpress.com
+                  <a href="mailto:info@autokeyexpress.ca" className="text-primary hover:text-primary-glow">
+                    info@autokeyexpress.ca
                   </a>
                 </div>
               </CardContent>
