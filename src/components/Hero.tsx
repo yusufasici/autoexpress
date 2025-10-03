@@ -1,34 +1,25 @@
-import { Phone, Clock, Award, DollarSign, Shield, Zap, MapPin, Star } from "lucide-react";
+import { Phone, Clock, Award, DollarSign, Zap, MapPin, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import heroImage1 from "@/assets/hero-locksmith.jpg";
-import heroImage2 from "@/assets/hero-locksmith2.jpg";
-import heroImage3 from "@/assets/hero-locksmith3.jpg";
 import heroImage4 from "@/assets/hero-locksmith4.jpg";
-import heroImage5 from "@/assets/hero-locksmith5.jpg";
 import heroImage6 from "@/assets/hero-locksmith6.jpg";
-import heroImage7 from "@/assets/hero-locksmith7.jpg";
 import heroImage8 from "@/assets/hero-locksmith8.jpg";
-import heroImage9 from "@/assets/hero-locksmith9.jpg";
+// Note: Additional hero images can be added above as needed
 import logomascot from "@/assets/logomascot2.png";
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
-  const heroImages = [
-    heroImage1,
-    heroImage8,
-    heroImage6,
-    heroImage4
-  ];
+  const heroImages = [heroImage1, heroImage8, heroImage6, heroImage4];
 
   useEffect(() => {
+    const intervalMs = 5000; // 5 seconds per slide
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
+      setCurrentImageIndex((prevIndex) =>
         prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Change image every 5 seconds
-
+    }, intervalMs);
     return () => clearInterval(interval);
   }, [heroImages.length]);
 
@@ -54,7 +45,7 @@ const Hero = () => {
           
           {/* Logo Mascot*/}
           <div className="flex items-center justify-center">
-            <img src={logomascot} className="h-88 w-88 opacity-50 object-contain" />
+            <img src={logomascot} className="h-56 w-auto opacity-50 object-contain" />
           </div>
 
           {/* Subtitle */}
@@ -67,7 +58,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
               size="lg"
-              className="bg-primary hover:bg-primary-glwo text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]"
+              className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]"
               asChild
             >
               <a href="tel:+16479068124">
@@ -77,7 +68,7 @@ const Hero = () => {
             </Button>
             <Button 
               size="lg"
-              className="bg-primary hover:bg-primary-glwo text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]"
+              className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]"
               asChild
             >
               <a 
@@ -133,7 +124,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Carousel Indicators removed to prevent manual switching */}
         </div>
       </div>
     </section>
