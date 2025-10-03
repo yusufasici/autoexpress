@@ -13,10 +13,8 @@ const Hero = () => {
   
   const heroImages = [
     heroImage1,
-    heroImage2,
     heroImage3,
-    heroImage4,
-    heroImage5
+    heroImage4
   ];
 
   useEffect(() => {
