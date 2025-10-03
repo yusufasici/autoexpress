@@ -1,10 +1,8 @@
 import { Key, Lock, Home, Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import lockoutImage from "@/assets/lockout-service.jpg";
-import keyReplacementImage from "@/assets/key-replacement.jpg";
 import residentialLockImage from "@/assets/residential-lock.jpg";
 import commercialAccessImage from "@/assets/commercial-access.jpg";
-import safeVaultImage from "@/assets/safe-vault.jpg";
 
 const Services = () => {
   const services = [
@@ -51,7 +49,7 @@ const Services = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-5xl md:text-5xl font-bold text-foreground mb-4">
             Automotive • Residential • Commercial
           </h2>
           <p className="text-lg text-muted-foreground">
