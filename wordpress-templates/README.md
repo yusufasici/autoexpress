@@ -56,7 +56,7 @@ The styles use CSS custom properties (variables) for easy theme customization. Y
 ## Image Requirements
 
 Make sure to add these images to your WordPress media library:
-- `logo.jpg` - Company logo
+- `logo.png` - Company logo
 - `hero-locksmith.jpg` - Hero background image
 - `lockout-service.jpg` - Lockout service image
 - `key-replacement.jpg` - Key replacement service image
