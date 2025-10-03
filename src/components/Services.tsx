@@ -56,19 +56,22 @@ const Services = () => {
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 mb-6">
-            <div className="flex items-center gap-3 bg-card/50 px-6 py-3 rounded-xl border border-border">
-              <Car className="h-6 w-6 text-primary" />
-              <span className="text-lg font-semibold text-foreground">Automotive</span>
+            <div className="group relative flex items-center gap-3 bg-card/50 px-6 py-3 rounded-xl border border-border overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <Car className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Automotive</span>
             </div>
             <div className="text-3xl text-primary">•</div>
-            <div className="flex items-center gap-3 bg-card/50 px-6 py-3 rounded-xl border border-border">
-              <Home className="h-6 w-6 text-primary" />
-              <span className="text-lg font-semibold text-foreground">Residential</span>
+            <div className="group relative flex items-center gap-3 bg-card/50 px-6 py-3 rounded-xl border border-border overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <Home className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Residential</span>
             </div>
             <div className="text-3xl text-primary">•</div>
-            <div className="flex items-center gap-3 bg-card/50 px-6 py-3 rounded-xl border border-border">
-              <Building2 className="h-6 w-6 text-primary" />
-              <span className="text-lg font-semibold text-foreground">Commercial</span>
+            <div className="group relative flex items-center gap-3 bg-card/50 px-6 py-3 rounded-xl border border-border overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <Building2 className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Commercial</span>
             </div>
           </div>
           
