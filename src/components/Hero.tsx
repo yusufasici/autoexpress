@@ -53,7 +53,7 @@ const Hero = () => {
           
           {/* Logo Mascot*/}
           <div className="flex items-center justify-center">
-            <img src={logomascot} className="h-56 w-80 opacity-75 object-cover" />
+            <img src={logomascot} className="h-88 w-124 opacity-75 object-cover" />
           </div>
 
           {/* Subtitle */}
