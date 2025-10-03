@@ -6,6 +6,7 @@ import heroImage2 from "@/assets/hero-locksmith2.jpg";
 import heroImage3 from "@/assets/hero-locksmith3.jpg";
 import heroImage4 from "@/assets/hero-locksmith4.jpg";
 import heroImage5 from "@/assets/hero-locksmith5.jpg";
+import heroImage6 from "@/assets/hero-locksmith6.jpg";
 import logomascot from "@/assets/logomascot2.png";
 
 const Hero = () => {
@@ -14,6 +15,7 @@ const Hero = () => {
   const heroImages = [
     heroImage1,
     heroImage3,
+    heroImage6,
     heroImage4
   ];
 
