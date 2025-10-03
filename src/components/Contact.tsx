@@ -76,6 +76,23 @@ const Contact = () => {
               </div>
             </div>
             <div className="bg-card/80 border border-border rounded-xl p-5 flex items-start gap-4">
+              <div className="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="currentColor" className="text-green-600"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.832 4.584 2.236 6.37L4.062 28.25a1 1 0 0 0 1.312 1.312l6.88-2.174A11.94 11.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.94 9.94 0 0 1-4.687-1.188 1 1 0 0 0-.75-.062l-5.062 1.6 1.6-5.062a1 1 0 0 0-.062-.75A9.94 9.94 0 0 1 6 15c0-5.523 4.477-10 10-10zm-4.5 6a1 1 0 0 0-.969 1.25c.188.75.594 2.188 1.406 3.406.812 1.219 2.031 2.594 4.031 3.594 2 .999 2.938.812 3.406.719a1 1 0 0 0 .75-.719c.094-.375.406-1.5.531-1.969a1 1 0 0 0-.25-.969l-1.25-1.25a1 1 0 0 0-1.406 0l-.406.406c-.25.25-.656.25-.906 0l-1.25-1.25a.642.642 0 0 1 0-.906l.406-.406a1 1 0 0 0 0-1.406l-1.25-1.25A1 1 0 0 0 11.5 11z"/></svg>
+              </div>
+              <div>
+                <div className="font-bold text-green-700 text-base mb-1">WhatsApp Message</div>
+                <div className="text-sm text-muted-foreground mb-1">Chat with us instantly on WhatsApp</div>
+                <a
+                  href="https://wa.me/16479068124"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-600 font-semibold text-base hover:underline"
+                >
+                  Send a WhatsApp Message
+                </a>
+              </div>
+            </div>
+            <div className="bg-card/80 border border-border rounded-xl p-5 flex items-start gap-4">
               <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mt-1">
                 <MapPin className="h-7 w-7 text-primary" />
               </div>
