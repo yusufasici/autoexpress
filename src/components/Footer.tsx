@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-2">
             <div className="flex items-center gap-3">
               <img src={logo} alt="AutoKey Express" className="h-28 w-28 rounded-full object-cover" />
             </div>
