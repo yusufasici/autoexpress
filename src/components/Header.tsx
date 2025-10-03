@@ -12,7 +12,6 @@ const Header = () => {
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            {/* <img src={logo} className="h-44 w-44 rounded-full object-cover" /> */}
             <img src={logo} className="h-56 w-90 object-cover" />
           </div>
 

@@ -1,16 +1,49 @@
 import { Phone, Clock, Award, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-locksmith.jpg";
+import { useState, useEffect } from "react";
+import heroImage1 from "@/assets/hero-locksmith.jpg";
+import heroImage2 from "@/assets/key-replacement.jpg";
+import heroImage3 from "@/assets/lockout-service.jpg";
+import heroImage4 from "@/assets/residential-lock.jpg";
+import heroImage5 from "@/assets/commercial-access.jpg";
+import heroImage6 from "@/assets/safe-vault.jpg";
 import logomascot from "@/assets/logomascot.png";
 
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const heroImages = [
+    heroImage1,
+    heroImage2,
+    heroImage3,
+    heroImage4,
+    heroImage5,
+    heroImage6
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      {/* Background Images with Carousel */}
+      <div className="absolute inset-0">
+        {heroImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{ backgroundImage: `url(${image})` }}
+          />
+        ))}
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />
       </div>
 
@@ -66,6 +99,22 @@ const Hero = () => {
               <h3 className="font-semibold text-foreground">Upfront Pricing</h3>
               <p className="text-sm text-muted-foreground">No hidden fees or surprises</p>
             </div>
+          </div>
+
+          {/* Carousel Indicators */}
+          <div className="flex justify-center space-x-2 pt-8">
+            {heroImages.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentImageIndex(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentImageIndex 
+                    ? 'bg-primary scale-125' 
+                    : 'bg-foreground/30 hover:bg-foreground/50'
+                }`}
+                aria-label={`Go to image ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
       </div>
