@@ -9,6 +9,12 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column: Content */}
           <div className="space-y-8">
+            <div className="inline-flex items-center gap-6 bg-primary/10 px-12 py-5 rounded-full mb-6 justify-center">
+              <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+              <span className="text-2xl md:text-3xl font-bold text-primary">About Us</span>
+              <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+            </div>
+
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Why Choose AutoKey Express?
             </h2>
