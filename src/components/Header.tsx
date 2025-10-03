@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Instagram, Facebook, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
@@ -27,6 +27,29 @@ const Header = () => {
             <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">
               Contact
             </a>
+            
+            {/* Social Media Icons */}
+            <div className="flex items-center gap-3">
+              <a 
+                href="https://instagram.com/expressautokey" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-pink-500 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://facebook.com/s" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-blue-600 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+            </div>
+            
             <Button 
               className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
               asChild
@@ -72,6 +95,38 @@ const Header = () => {
             >
               Contact
             </a>
+            
+            {/* Social Media Icons - Mobile */}
+            <div className="flex items-center justify-center gap-4 py-2">
+              <a 
+                href="https://instagram.com/autokeyexpress" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-pink-500 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://facebook.com/autokeyexpress" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-blue-600 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://twitter.com/autokeyexpress" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-blue-400 transition-colors"
+                aria-label="Twitter"
+              >
+                <Twitter className="h-6 w-6" />
+              </a>
+            </div>
+            
             <Button 
               className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
               asChild
