@@ -1,4 +1,4 @@
-import { Key, Wrench, Lock, Home, Building2, Shield } from "lucide-react";
+import { Key, Lock, Home, Building2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import lockoutImage from "@/assets/lockout-service.jpg";
 import keyReplacementImage from "@/assets/key-replacement.jpg";
@@ -10,74 +10,38 @@ const Services = () => {
   const services = [
     {
       icon: Lock,
-      title: "Car Lockout Assistance",
-      description: "Locked out of your car? Our expert locksmiths can safely unlock your vehicle without damage.",
+      title: "Automotive Locksmithing",
+      description: "On-site car key services and emergency help to get you back on the road fast.",
       image: lockoutImage,
       features: [
-        "All car makes and models",
-        "No damage guarantee",
-        "24/7 availability",
-        "Insurance claim assistance"
-      ]
-    },
-    {
-      icon: Key,
-      title: "Key Replacement & Programming",
-      description: "Lost or damaged keys? We create and program new keys for all vehicle types on-site.",
-      image: keyReplacementImage,
-      features: [
-        "Transponder key programming",
-        "Smart key replacement",
-        "Key fob programming",
-        "Immediate service"
-      ]
-    },
-    {
-      icon: Wrench,
-      title: "Ignition Repair & Replacement",
-      description: "Ignition problems? We repair and replace faulty ignition systems to get you driving again.",
-      image: null,
-      features: [
-        "Ignition cylinder replacement",
-        "Key stuck in ignition",
-        "Ignition switch repair",
-        "Same-day service"
+        "Car lockout service (damage-free)",
+        "Key replacement & key fob programming",
+        "Ignition repair & key extraction",
+        "Smart keys • Transponders • Remotes"
       ]
     },
     {
       icon: Home,
-      title: "Residential Locksmith Services",
-      description: "Complete home security solutions including lock installation, rekeying, and emergency lockouts.",
+      title: "Residential Locksmithing",
+      description: "Complete home lock & security solutions for peace of mind.",
       image: residentialLockImage,
       features: [
-        "Home lockout service",
+        "House lockouts • Rekeying",
         "Lock installation & repair",
-        "Rekeying services",
-        "Security upgrades"
+        "Smart locks & keypad deadbolts",
+        "Door hardware upgrades"
       ]
     },
     {
       icon: Building2,
-      title: "Commercial Security Systems",
-      description: "Professional commercial locksmith services for businesses, offices, and industrial facilities.",
+      title: "Commercial Locksmithing",
+      description: "Professional security and access systems for offices, stores, and facilities.",
       image: commercialAccessImage,
       features: [
         "Master key systems",
-        "Access control installation",
-        "High-security locks",
-        "Office lockout service"
-      ]
-    },
-    {
-      icon: Shield,
-      title: "Safe & Vault Services",
-      description: "Expert safe opening, installation, and combination changes for residential and commercial safes.",
-      image: safeVaultImage,
-      features: [
-        "Safe opening & repair",
-        "Combination changes",
-        "New safe installation",
-        "Emergency access"
+        "High-security & restricted keys",
+        "Panic bars • Door closers • Hardware",
+        "Access control & keypad systems"
       ]
     }
   ];
@@ -88,10 +52,10 @@ const Services = () => {
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Our Services
+            Automotive • Residential • Commercial
           </h2>
           <p className="text-lg text-muted-foreground">
-            We provide comprehensive locksmith services for automotive, residential, and commercial needs - available 24/7.
+            Full‑service locksmithing for vehicles, homes, and businesses — available 24/7.
           </p>
         </div>
 
