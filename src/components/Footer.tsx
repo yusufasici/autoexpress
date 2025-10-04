@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, EthernetPort } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
