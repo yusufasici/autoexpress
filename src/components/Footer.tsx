@@ -1,7 +1,15 @@
+import React from "react";
 import { Phone, Mail, MapPin, Clock, EthernetPort } from "lucide-react";
 import logo from "@/assets/logo2.png";
 
 const Footer = () => {
+  // Add top padding to main content to prevent footer/header overlap
+  React.useEffect(() => {
+    const main = document.querySelector('main');
+    if (main) {
+      main.style.paddingTop = '6rem'; // header height (h-24 = 6rem)
+    }
+  }, []);
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
