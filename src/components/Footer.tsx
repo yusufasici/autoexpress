@@ -4,8 +4,8 @@ import logo from "@/assets/logo2.png";
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
-      <div className="container mx-auto px-3">
-        <div className="flex items-center justify-between h-24">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-2">
             {/* Logo */}
