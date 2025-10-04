@@ -22,23 +22,18 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Car Lockout
+                <a href="#automotive" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Automotive Locsmiting
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Key Replacement
+                <a href="#residential" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Residential Locksmithing
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Ignition Repair
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Key Programming
+                <a href="#commercial" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Commercial Locksmithing
                 </a>
               </li>
             </ul>
