@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="space-y-2">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <img src={logo} className="h-24 w-auto object-cover" />
+              <img src={logo} className="h-18 w-auto object-cover" />
             </div>
             <p className="text-sm text-muted-foreground">
               Your trusted 24/7 automotive locksmith service. Fast, reliable, and professional.
