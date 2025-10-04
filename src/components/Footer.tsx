@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Clock, EthernetPort } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo2.png";
 
 const Footer = () => {
   return (
