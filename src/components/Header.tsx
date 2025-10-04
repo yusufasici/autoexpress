@@ -125,7 +125,7 @@ const Header = () => {
                 <Instagram className="h-6 w-6" />
               </a>
               <a 
-                href="https://facebook.com/s" 
+                href="https://www.facebook.com/profile.php?id=61581941300247" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:text-primary-glow transition-colors"
