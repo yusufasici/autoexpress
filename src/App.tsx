@@ -21,6 +21,9 @@ import LocksmithScarborough from "./pages/service-areas/LocksmithScarborough";
 import LocksmithThornhill from "./pages/service-areas/LocksmithThornhill";
 import LocksmithVaughan from "./pages/service-areas/LocksmithVaughan";
 import LocksmithBrampton from "./pages/service-areas/LocksmithBrampton";
+import Automotive from "./pages/services/Automotive";
+import Residential from "./pages/services/Residential";
+import Commercial from "./pages/services/Commercial";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +50,9 @@ const App = () => (
           <Route path="/locksmith-thornhill" element={<LocksmithThornhill />} />
           <Route path="/locksmith-vaughan" element={<LocksmithVaughan />} />
           <Route path="/locksmith-brampton" element={<LocksmithBrampton />} />
+          <Route path="/services/automotive" element={<Automotive />} />
+          <Route path="/services/residential" element={<Residential />} />
+          <Route path="/services/commercial" element={<Commercial />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
