@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import { Clock, Zap, Award, DollarSign, MapPin, Star } from "lucide-react";
+import { Clock, Zap, Award, DollarSign, MapPin, Star, KeyIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -72,23 +72,41 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
         </Button>
         </div>
 
-      {/* City-based Info */}
-      <h1 className="text-3xl md:text-4xl font-bold text-primary mb-4 mt-6">
-        Locksmith {city} – 24/7 Local Locksmith Services
-      </h1>
-      <p className="mb-6 text-lg text-muted-foreground">
-        Need a locksmith in {city}? AutoKey Express offers fast, reliable, and professional locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out, need a key replacement, or want to upgrade your security, our mobile team is ready to help 24/7.
-      </p>
-      <ul className="list-disc pl-6 mb-6">
-        <li>Car, home, and business lockouts</li>
-        <li>Key replacement & duplication</li>
-        <li>Lock rekeying & installation</li>
-        <li>Ignition repair</li>
-        <li>Emergency locksmith service</li>
-      </ul>
-      <p className="mb-4">
-        Serving all neighborhoods in {city}. Call us now for immediate assistance!
-      </p>
+      {/* City-based Info (visually enhanced) */}
+      <div className="max-w-2xl mx-auto bg-card/80 border border-primary/30 rounded-2xl shadow-lg p-8 mt-8 mb-8 backdrop-blur-sm">
+        <h1 className="text-2xl md:text-3xl font-bold text-primary mb-2 flex items-center justify-center gap-2">
+          <MapPin className="inline-block h-7 w-7 text-primary" />
+          Locksmith {city} <span className="hidden md:inline">– 24/7 Local Locksmith Services</span>
+        </h1>
+        <p className="mb-4 text-base md:text-lg text-foreground/90 text-center">
+          Need a locksmith in <span className="font-semibold text-primary">{city}</span>? AutoKey Express offers <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out, need a key replacement, or want to upgrade your security, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+          <div className="flex items-start gap-3">
+            <Zap className="h-6 w-6 text-primary mt-1" />
+            <span>Car, home, and business lockouts</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <KeyIcon className="h-6 w-6 text-primary mt-1" />
+            <span>Key replacement &amp; duplication</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <Award className="h-6 w-6 text-primary mt-1" />
+            <span>Lock rekeying &amp; installation</span>
+          </div>
+          <div className="flex items-start gap-3">
+            <DollarSign className="h-6 w-6 text-primary mt-1" />
+            <span>Ignition repair</span>
+          </div>
+          <div className="flex items-start gap-3 sm:col-span-2">
+            <Clock className="h-6 w-6 text-primary mt-1" />
+            <span>Emergency locksmith service</span>
+          </div>
+        </div>
+        <p className="mb-0 text-center text-muted-foreground">
+          <span className="font-semibold text-primary">Serving all neighborhoods in {city}.</span> Call us now for immediate assistance!
+        </p>
+      </div>
     </Hero>
     <Services />
     <About />
