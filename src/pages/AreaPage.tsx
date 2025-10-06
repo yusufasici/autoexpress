@@ -91,15 +91,6 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
               <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">Service for Lockouts</p>
             </div>
           </div>
-          {/* Card 2 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <Zap className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
-            <div>
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">Fast Response</h3>
-              <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">&lt; 60 min arrival time</p>
-            </div>
-          </div>
           {/* Card 3 */}
           <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -125,15 +116,6 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
             <div>
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">Mobile Service</h3>
               <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">Throughout {city}</p>
-            </div>
-          </div>
-          {/* Card 6 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <Star className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
-            <div>
-              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">Highly Rated</h3>
-              <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">Local Service</p>
             </div>
           </div>
         </div>
