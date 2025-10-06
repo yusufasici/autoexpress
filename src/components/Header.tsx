@@ -33,11 +33,6 @@ const Header = () => {
               className="relative"
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
-              onFocus={() => setDropdownOpen(true)}
-              onBlur={e => {
-                // Only close if focus moves outside the dropdown
-                if (!e.currentTarget.contains(e.relatedTarget)) setDropdownOpen(false);
-              }}
             >
               <button
                 className="text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
@@ -45,6 +40,7 @@ const Header = () => {
                 aria-expanded={dropdownOpen}
                 tabIndex={0}
                 onClick={() => setDropdownOpen(v => !v)}
+                type="button"
               >
                 Service Areas
               </button>
