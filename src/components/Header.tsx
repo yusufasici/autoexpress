@@ -7,8 +7,11 @@ import logo from "@/assets/logo2.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
-  const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
+  // Separate dropdown states for areas and services
+  const [desktopAreasDropdownOpen, setDesktopAreasDropdownOpen] = useState(false);
+  const [desktopServicesDropdownOpen, setDesktopServicesDropdownOpen] = useState(false);
+  const [mobileAreasDropdownOpen, setMobileAreasDropdownOpen] = useState(false);
+  const [mobileServicesDropdownOpen, setMobileServicesDropdownOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-lg">
@@ -24,31 +27,52 @@ const Header = () => {
             <a href="/" className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors font-semibold">
               <Home className="h-5 w-5" /> Home
             </a>
-            <a href="#services" className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors">
-              <Wrench className="h-5 w-5" /> Services
-            </a>
+            {/* Services Dropdown (Desktop) */}
+            <div
+              className="relative z-50"
+              onMouseEnter={() => setDesktopServicesDropdownOpen(true)}
+              onMouseLeave={() => setDesktopServicesDropdownOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${desktopServicesDropdownOpen ? 'text-primary' : 'text-foreground/80 hover:text-primary'}`}
+                aria-haspopup="true"
+                aria-expanded={desktopServicesDropdownOpen}
+                tabIndex={0}
+                type="button"
+              >
+                <Wrench className="h-5 w-5" /> Services
+              </button>
+              <div className={`absolute left-0 mt-0 w-56 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopServicesDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+              >
+                <ul className="py-2">
+                  <li><a href="/services/automotive" className="block px-4 py-2 hover:bg-primary/10">Automotive Locksmith</a></li>
+                  <li><a href="/services/residential" className="block px-4 py-2 hover:bg-primary/10">Residential Locksmith</a></li>
+                  <li><a href="/services/commercial" className="block px-4 py-2 hover:bg-primary/10">Commercial Locksmith</a></li>
+                </ul>
+              </div>
+            </div>
             <a href="#about" className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors">
               <Info className="h-5 w-5" /> About
             </a>
             <a href="#contact" className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors">
               <MailIcon className="h-5 w-5" /> Contact
             </a>
-            {/* Area Dropdown */}
+            {/* Area Dropdown (Desktop) */}
             <div
               className="relative z-50"
-              onMouseEnter={() => setDesktopDropdownOpen(true)}
-              onMouseLeave={() => setDesktopDropdownOpen(false)}
+              onMouseEnter={() => setDesktopAreasDropdownOpen(true)}
+              onMouseLeave={() => setDesktopAreasDropdownOpen(false)}
             >
               <button
-                className={`flex items-center gap-1 transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${desktopDropdownOpen ? 'text-primary' : 'text-foreground/80 hover:text-primary'}`}
+                className={`flex items-center gap-1 transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${desktopAreasDropdownOpen ? 'text-primary' : 'text-foreground/80 hover:text-primary'}`}
                 aria-haspopup="true"
-                aria-expanded={desktopDropdownOpen}
+                aria-expanded={desktopAreasDropdownOpen}
                 tabIndex={0}
                 type="button"
               >
                 <MapPin className="h-5 w-5" /> Service Areas
               </button>
-              <div className={`absolute left-0 mt-0 w-56 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+              <div className={`absolute left-0 mt-0 w-56 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopAreasDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
               >
                 <ul className="py-2">
                   <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
@@ -135,9 +159,28 @@ const Header = () => {
             <a href="/" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors py-2 font-semibold" onClick={() => setIsMenuOpen(false)}>
               <Home className="h-5 w-5" /> Home
             </a>
-            <a href="#services" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
-              <Wrench className="h-5 w-5" /> Services
-            </a>
+            {/* Services Dropdown (Mobile) */}
+            <div className="relative">
+              <button
+                className="w-full flex items-center gap-2 text-left text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                aria-haspopup="true"
+                aria-expanded={mobileServicesDropdownOpen}
+                tabIndex={0}
+                onClick={() => setMobileServicesDropdownOpen(v => !v)}
+                type="button"
+              >
+                <Wrench className="h-5 w-5" /> Services
+              </button>
+              {mobileServicesDropdownOpen && (
+                <div className="mt-2 w-full bg-background border border-border rounded shadow-lg z-50">
+                  <ul className="py-2">
+                    <li><a href="/services/automotive" className="block px-4 py-2 hover:bg-primary/10">Automotive Locksmith</a></li>
+                    <li><a href="/services/residential" className="block px-4 py-2 hover:bg-primary/10">Residential Locksmith</a></li>
+                    <li><a href="/services/commercial" className="block px-4 py-2 hover:bg-primary/10">Commercial Locksmith</a></li>
+                  </ul>
+                </div>
+              )}
+            </div>
             <a href="#about" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
               <Info className="h-5 w-5" /> About
             </a>
@@ -149,14 +192,14 @@ const Header = () => {
               <button
                 className="w-full flex items-center gap-2 text-left text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 aria-haspopup="true"
-                aria-expanded={mobileDropdownOpen}
+                aria-expanded={mobileAreasDropdownOpen}
                 tabIndex={0}
-                onClick={() => setMobileDropdownOpen(v => !v)}
+                onClick={() => setMobileAreasDropdownOpen(v => !v)}
                 type="button"
               >
                 <MapPin className="h-5 w-5" /> Service Areas
               </button>
-              {mobileDropdownOpen && (
+              {mobileAreasDropdownOpen && (
                 <div className="mt-2 w-full bg-background border border-border rounded shadow-lg z-50">
                   <ul className="py-2">
                     <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
