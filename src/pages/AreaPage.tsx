@@ -78,13 +78,13 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
           24/7 Locksmith Services in {city}
         </h1>
         <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center">
-          Need a locksmith in <span className="font-semibold text-primary">{city}</span>? AutoKey Express offers <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
+          Need a locksmith in <span className="font-semibold text-primary">{city}</span>? We offer <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
         </p>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6">
           {/* Card 1 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-2 px-3 flex items-center gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-2 px-3 flex flex-col items-center gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0 text-center">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <Clock className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+            <Clock className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300 mb-1" />
             <div className="flex flex-col justify-center min-w-0">
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base">24/7 Emergency</h3>
               <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">Service for Lockouts</p>
@@ -93,7 +93,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
           {/* Card 2 */}
           <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-2 px-3 flex items-center gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <Zap className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+            <Zap className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300 mb-1" />
             <div className="flex flex-col justify-center min-w-0">
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base">Fast Response</h3>
               <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">&lt; 60 min arrival time</p>
@@ -102,7 +102,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
           {/* Card 3 */}
           <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-2 px-3 flex items-center gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <Award className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+            <Award className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300 mb-1" />
             <div className="flex flex-col justify-center min-w-0">
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base">Licenced & Insured</h3>
               <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">Certified & Trusted</p>
@@ -111,7 +111,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
           {/* Card 4 */}
           <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-2 px-3 flex items-center gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <DollarSign className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+            <DollarSign className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300 mb-1" />
             <div className="flex flex-col justify-center min-w-0">
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base">Upfront Pricing</h3>
               <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">No Hidden Fees</p>
@@ -120,7 +120,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
           {/* Card 5 */}
           <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-2 px-3 flex items-center gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <MapPin className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+            <MapPin className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300 mb-1" />
             <div className="flex flex-col justify-center min-w-0">
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base">Mobile Service</h3>
               <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">Throughout {city}</p>
@@ -129,7 +129,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
           {/* Card 6 */}
           <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-2 px-3 flex items-center gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            <Star className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+            <Star className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300 mb-1" />
             <div className="flex flex-col justify-center min-w-0">
               <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base">Highly Rated</h3>
               <p className="text-xs text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-snug">Local Service</p>
