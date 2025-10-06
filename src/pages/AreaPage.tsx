@@ -81,9 +81,9 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
         <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center">
           Need a locksmith in <span className="font-semibold text-primary">{city}</span>? AutoKey Express offers <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out, need a key replacement, or want to upgrade your security, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
         </p>
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-6 items-center justify-items-center min-h-[320px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-6">
           {/* Card 1 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-center gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-[80px] w-full">
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <Clock className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
             <div>
@@ -92,7 +92,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
             </div>
           </div>
           {/* Card 3 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-center gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-[80px] w-full">
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <Award className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
             <div>
@@ -101,7 +101,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
             </div>
           </div>
           {/* Card 4 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-center gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-[80px] w-full">
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <DollarSign className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
             <div>
@@ -110,7 +110,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
             </div>
           </div>
           {/* Card 5 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-center gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-[80px] w-full">
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <MapPin className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
             <div>
