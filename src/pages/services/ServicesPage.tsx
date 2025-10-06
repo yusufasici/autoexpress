@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import logomascot from "@/assets/logomascot2.png";
+import Hero from "@/components/Hero";
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -24,7 +25,7 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, childre
       <meta property="og:title" content={`${title} | AutoKey Express`} />
       <meta property="og:description" content={description} />
     </Helmet>
-    <section className="container mx-auto py-12 px-4">
+    <Hero>
       <div className="flex items-center justify-center">
         <img src={logomascot} className="h-56 w-auto opacity-50 object-contain" alt="AutoKey Express Mascot" />
       </div>
@@ -49,7 +50,7 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, childre
         </Button>
       </div>
       {children}
-    </section>
+    </Hero>
     <About />
     <Contact />
     <Footer />
