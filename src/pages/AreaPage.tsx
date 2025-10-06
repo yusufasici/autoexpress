@@ -74,15 +74,13 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
 
       {/* City-based Info (visually enhanced, 3x2 grid, card style) */}
       <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-10 mt-10 mb-10 backdrop-blur-md">
-        <div className="bg-muted/80 rounded-xl px-6 py-6 mb-8 shadow-sm border border-border/60">
-          <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3 flex items-center justify-center gap-2">
-            <MapPin className="inline-block h-8 w-8 text-primary" />
-            Locksmith {city} <span className="hidden md:inline">– 24/7 Local Locksmith Services</span>
-          </h1>
-          <p className="mb-0 text-lg md:text-xl text-foreground/90 text-center">
-            Need a locksmith in <span className="font-semibold text-primary">{city}</span>? AutoKey Express offers <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out, need a key replacement, or want to upgrade your security, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
-          </p>
-        </div>
+        <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3 flex items-center justify-center gap-2">
+          <MapPin className="inline-block h-8 w-8 text-primary" />
+          Locksmith {city} <span className="hidden md:inline">– 24/7 Local Locksmith Services</span>
+        </h1>
+        <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center">
+          Need a locksmith in <span className="font-semibold text-primary">{city}</span>? AutoKey Express offers <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out, need a key replacement, or want to upgrade your security, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           {/* Card 1 */}
           <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-6 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
