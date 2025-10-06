@@ -35,7 +35,7 @@ const Header = () => {
               onMouseLeave={() => setDesktopDropdownOpen(false)}
             >
               <button
-                className="text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className="text-foreground/80 hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 aria-haspopup="true"
                 aria-expanded={desktopDropdownOpen}
                 tabIndex={0}
@@ -43,7 +43,7 @@ const Header = () => {
               >
                 Service Areas
               </button>
-              <div className={`absolute left-0 mt-2 w-56 pt-2 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+              <div className={`absolute left-0 mt-0 w-56 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
               >
                 <ul className="py-2">
                   <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
