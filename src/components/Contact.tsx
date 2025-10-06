@@ -126,33 +126,51 @@ const Contact = () => {
                 <div>
                   <div className="font-bold text-foreground text-base mb-1">Service Area</div>
                   <div className="text-sm text-muted-foreground">
-                    {[
-                      { name: "Toronto", path: "/locksmith-toronto" },
-                      { name: "Aurora", path: "/locksmith-aurora" },
-                      { name: "Bolton", path: "/locksmith-bolton" },
-                      { name: "Concord", path: "/locksmith-concord" },
-                      { name: "Etobicoke", path: "/locksmith-etobicoke" },
-                      { name: "Maple", path: "/locksmith-maple" },
-                      { name: "Markham", path: "/locksmith-markham" },
-                      { name: "Mississauga", path: "/locksmith-mississauga" },
-                      { name: "North York", path: "/locksmith-northyork" },
-                      { name: "Oakville", path: "/locksmith-oakville" },
-                      { name: "Richmond Hill", path: "/locksmith-richmondhill" },
-                      { name: "Scarborough", path: "/locksmith-scarborough" },
-                      { name: "Thornhill", path: "/locksmith-thornhill" },
-                      { name: "Vaughan", path: "/locksmith-vaughan" },
-                      { name: "Brampton", path: "/locksmith-brampton" },
-                    ].map((city, idx, arr) => (
-                      <React.Fragment key={city.name}>
-                        <a
-                          href={city.path}
-                          className="text-primary underline hover:text-primary-glow transition-colors duration-150"
-                        >
-                          {city.name}
-                        </a>
-                        {idx < arr.length - 1 && <span> &bull; </span>}
-                      </React.Fragment>
-                    ))}
+                    {(() => {
+                      const cities = [
+                        { name: "Toronto", path: "/locksmith-toronto" },
+                        { name: "Aurora", path: "/locksmith-aurora" },
+                        { name: "Bolton", path: "/locksmith-bolton" },
+                        { name: "Brampton", path: "/locksmith-brampton" },
+                        { name: "Concord", path: "/locksmith-concord" },
+                        { name: "Etobicoke", path: "/locksmith-etobicoke" },
+                        { name: "Maple", path: "/locksmith-maple" },
+                        { name: "Markham", path: "/locksmith-markham" },
+                        { name: "Mississauga", path: "/locksmith-mississauga" },
+                        { name: "North York", path: "/locksmith-northyork" },
+                        { name: "Oakville", path: "/locksmith-oakville" },
+                        { name: "Richmond Hill", path: "/locksmith-richmondhill" },
+                        { name: "Scarborough", path: "/locksmith-scarborough" },
+                        { name: "Thornhill", path: "/locksmith-thornhill" },
+                        { name: "Vaughan", path: "/locksmith-vaughan" },
+                      ];
+                      const perLine = Math.ceil(cities.length / 3);
+                      const lines = [
+                        cities.slice(0, perLine),
+                        cities.slice(perLine, perLine * 2),
+                        cities.slice(perLine * 2),
+                      ];
+                      return (
+                        <>
+                          {lines.map((line, lineIdx) => (
+                            <React.Fragment key={lineIdx}>
+                              {line.map((city, idx) => (
+                                <React.Fragment key={city.name}>
+                                  <a
+                                    href={city.path}
+                                    className="text-primary underline hover:text-primary-glow transition-colors duration-150"
+                                  >
+                                    {city.name}
+                                  </a>
+                                  {idx < line.length - 1 && <span> &bull; </span>}
+                                </React.Fragment>
+                              ))}
+                              {lineIdx < lines.length - 1 && <br />}
+                            </React.Fragment>
+                          ))}
+                        </>
+                      );
+                    })()}
                     <br />
                     Mobile service - We come to you!
                   </div>
