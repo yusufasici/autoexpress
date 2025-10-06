@@ -126,7 +126,33 @@ const Contact = () => {
                 <div>
                   <div className="font-bold text-foreground text-base mb-1">Service Area</div>
                   <div className="text-sm text-muted-foreground">
-                    Toronto - Bolton - Brampton - Concord - Etobicoke - Maple - Markham - Mississauga - North York - Oakville - Richmond Hill - Scarborough - Thornhill - Vaughan<br />
+                    {[
+                      { name: "Toronto", path: "/locksmith-toronto" },
+                      { name: "Bolton", path: "/locksmith-bolton" },
+                      { name: "Brampton", path: "/locksmith-brampton" },
+                      { name: "Concord", path: "/locksmith-concord" },
+                      { name: "Etobicoke", path: "/locksmith-etobicoke" },
+                      { name: "Maple", path: "/locksmith-maple" },
+                      { name: "Markham", path: "/locksmith-markham" },
+                      { name: "Mississauga", path: "/locksmith-mississauga" },
+                      { name: "North York", path: "/locksmith-northyork" },
+                      { name: "Oakville", path: "/locksmith-oakville" },
+                      { name: "Richmond Hill", path: "/locksmith-richmondhill" },
+                      { name: "Scarborough", path: "/locksmith-scarborough" },
+                      { name: "Thornhill", path: "/locksmith-thornhill" },
+                      { name: "Vaughan", path: "/locksmith-vaughan" },
+                    ].map((city, idx, arr) => (
+                      <React.Fragment key={city.name}>
+                        <a
+                          href={city.path}
+                          className="text-primary underline hover:text-primary-glow transition-colors duration-150"
+                        >
+                          {city.name}
+                        </a>
+                        {idx < arr.length - 1 && <span> &bull; </span>}
+                      </React.Fragment>
+                    ))}
+                    <br />
                     Mobile service - We come to you!
                   </div>
                 </div>
