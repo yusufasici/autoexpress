@@ -13,9 +13,9 @@ const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
-  <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-2">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
           {/* Company Info */}
-          <div className="space-y-2">
+          <div className="flex flex-col h-full space-y-2 col-span-1">
             {/* Logo */}
             <div className="flex items-center gap-3">
               <img src={logo} className="h-18 w-auto object-cover" />
@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div>
+          <div className="col-span-1">
             <h3 className="font-semibold text-foreground mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           {/* Service Areas */}
-          <div>
+          <div className="col-span-1">
             <h3 className="font-semibold text-foreground mb-4">Service Areas</h3>
             <ul className="grid grid-cols-3 gap-x-4 gap-y-2">
               <li><a href="/locksmith-toronto" className="text-sm text-muted-foreground hover:text-primary transition-colors">Toronto</a></li>
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="col-span-1">
             <h3 className="font-semibold text-foreground mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -99,7 +99,7 @@ const Footer = () => {
           </div>
 
           {/* Business Hours */}
-          <div>
+          <div className="col-span-1">
             <h3 className="font-semibold text-foreground mb-4">Business Hours</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
