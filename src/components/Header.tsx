@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Phone, Instagram, Facebook, Twitter } from "lucide-react";
+import { Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo2.png";
 
@@ -19,6 +20,10 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
+            <a href="/" className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors font-semibold">
+              <Home className="h-5 w-5" />
+              Home
+            </a>
             <a href="#services" className="text-foreground/80 hover:text-primary transition-colors">
               Services
             </a>
@@ -127,6 +132,9 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border space-y-4">
+            <a href="/" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors py-2 font-semibold" onClick={() => setIsMenuOpen(false)}>
+              <Home className="h-5 w-5" /> Home
+            </a>
             <a href="#services" className="block text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>Services</a>
             <a href="#about" className="block text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="#contact" className="block text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>Contact</a>
