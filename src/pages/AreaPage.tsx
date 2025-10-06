@@ -83,24 +83,28 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
           <div className="flex items-start gap-3">
-            <Zap className="h-6 w-6 text-primary mt-1" />
-            <span>Car, home, and business lockouts</span>
+            <Clock className="h-6 w-6 text-primary mt-1" />
+            <span>24/7 Emergency Service for Lockouts </span>
           </div>
           <div className="flex items-start gap-3">
-            <KeyIcon className="h-6 w-6 text-primary mt-1" />
-            <span>Key replacement &amp; duplication</span>
+            <Zap className="h-6 w-6 text-primary mt-1" />
+            <span>Fast Response &lt; 60 minutes arrival time</span>
           </div>
           <div className="flex items-start gap-3">
             <Award className="h-6 w-6 text-primary mt-1" />
-            <span>Lock rekeying &amp; installation</span>
+            <span>Licenced &amp; Insured</span>
           </div>
           <div className="flex items-start gap-3">
             <DollarSign className="h-6 w-6 text-primary mt-1" />
-            <span>Ignition repair</span>
+            <span>Upfront Pricing &amp; No Hidden Fees</span>
           </div>
           <div className="flex items-start gap-3 sm:col-span-2">
-            <Clock className="h-6 w-6 text-primary mt-1" />
-            <span>Emergency locksmith service</span>
+            <MapPin className="h-6 w-6 text-primary mt-1" />
+            <span>Mobile service throughout {city}</span>
+          </div>
+          <div className="flex items-start gap-3 sm:col-span-2">
+            <Star className="h-6 w-6 text-primary mt-1" />
+            <span>Highly Rated Local Service</span>
           </div>
         </div>
         <p className="mb-0 text-center text-muted-foreground">
