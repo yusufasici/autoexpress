@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import { Clock, Zap, Award, DollarSign, MapPin, Star, KeyIcon } from "lucide-react";
+import { Clock, Zap, Award, DollarSign, MapPin, Star } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -72,39 +72,57 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
         </Button>
         </div>
 
-      {/* City-based Info (visually enhanced) */}
-      <div className="max-w-2xl mx-auto bg-card/80 border border-primary/30 rounded-2xl shadow-lg p-8 mt-8 mb-8 backdrop-blur-sm">
-        <h1 className="text-2xl md:text-3xl font-bold text-primary mb-2 flex items-center justify-center gap-2">
-          <MapPin className="inline-block h-7 w-7 text-primary" />
+      {/* City-based Info (visually enhanced, 3x2 grid, card style) */}
+      <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-10 mt-10 mb-10 backdrop-blur-md">
+        <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3 flex items-center justify-center gap-2">
+          <MapPin className="inline-block h-8 w-8 text-primary" />
           Locksmith {city} <span className="hidden md:inline">– 24/7 Local Locksmith Services</span>
         </h1>
-        <p className="mb-4 text-base md:text-lg text-foreground/90 text-center">
+        <p className="mb-6 text-lg md:text-xl text-foreground/90 text-center">
           Need a locksmith in <span className="font-semibold text-primary">{city}</span>? AutoKey Express offers <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out, need a key replacement, or want to upgrade your security, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div className="flex items-start gap-3">
-            <Clock className="h-6 w-6 text-primary mt-1" />
-            <span>24/7 Emergency Service for Lockouts </span>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          {/* Card 1 */}
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-6 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <Clock className="h-8 w-8 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 text-center">24/7 Emergency</h3>
+            <p className="text-sm text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 text-center">Service for Lockouts</p>
           </div>
-          <div className="flex items-start gap-3">
-            <Zap className="h-6 w-6 text-primary mt-1" />
-            <span>Fast Response &lt; 60 minutes arrival time</span>
+          {/* Card 2 */}
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-6 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <Zap className="h-8 w-8 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 text-center">Fast Response</h3>
+            <p className="text-sm text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 text-center">&lt; 60 min arrival time</p>
           </div>
-          <div className="flex items-start gap-3">
-            <Award className="h-6 w-6 text-primary mt-1" />
-            <span>Licenced &amp; Insured</span>
+          {/* Card 3 */}
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-6 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <Award className="h-8 w-8 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 text-center">Licenced & Insured</h3>
+            <p className="text-sm text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 text-center">Certified & Trusted</p>
           </div>
-          <div className="flex items-start gap-3 sm:col-span-1">
-            <DollarSign className="h-6 w-6 text-primary mt-1" />
-            <span>Upfront Pricing &amp; No Hidden Fees</span>
+          {/* Card 4 */}
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-6 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <DollarSign className="h-8 w-8 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 text-center">Upfront Pricing</h3>
+            <p className="text-sm text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 text-center">No Hidden Fees</p>
           </div>
-          <div className="flex items-start gap-3 sm:col-span-1">
-            <MapPin className="h-6 w-6 text-primary mt-1" />
-            <span>Mobile service throughout {city}</span>
+          {/* Card 5 */}
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-6 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <MapPin className="h-8 w-8 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 text-center">Mobile Service</h3>
+            <p className="text-sm text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 text-center">Throughout {city}</p>
           </div>
-          <div className="flex items-start gap-3 sm:col-span-2">
-            <Star className="h-6 w-6 text-primary mt-1" />
-            <span>Highly Rated Local Service</span>
+          {/* Card 6 */}
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-6 space-y-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <Star className="h-8 w-8 text-primary mx-auto group-hover:scale-110 transition-transform duration-300" />
+            <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 text-center">Highly Rated</h3>
+            <p className="text-sm text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 text-center">Local Service</p>
           </div>
         </div>
         <p className="mb-0 text-center text-muted-foreground">
