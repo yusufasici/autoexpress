@@ -26,7 +26,29 @@ const Header = () => {
             <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">
               Contact
             </a>
-            
+            {/* Area Dropdown */}
+            <div className="relative group">
+              <button className="text-foreground/80 hover:text-primary transition-colors font-semibold">Areas</button>
+              <div className="absolute left-0 mt-2 w-56 bg-background border border-border rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity z-50">
+                <ul className="py-2">
+                  <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
+                  <li><a href="/locksmith-aurora" className="block px-4 py-2 hover:bg-primary/10">Aurora</a></li>
+                  <li><a href="/locksmith-bolton" className="block px-4 py-2 hover:bg-primary/10">Bolton</a></li>
+                  <li><a href="/locksmith-concord" className="block px-4 py-2 hover:bg-primary/10">Concord</a></li>
+                  <li><a href="/locksmith-etobicoke" className="block px-4 py-2 hover:bg-primary/10">Etobicoke</a></li>
+                  <li><a href="/locksmith-maple" className="block px-4 py-2 hover:bg-primary/10">Maple</a></li>
+                  <li><a href="/locksmith-markham" className="block px-4 py-2 hover:bg-primary/10">Markham</a></li>
+                  <li><a href="/locksmith-mississauga" className="block px-4 py-2 hover:bg-primary/10">Mississauga</a></li>
+                  <li><a href="/locksmith-northyork" className="block px-4 py-2 hover:bg-primary/10">North York</a></li>
+                  <li><a href="/locksmith-oakville" className="block px-4 py-2 hover:bg-primary/10">Oakville</a></li>
+                  <li><a href="/locksmith-richmondhill" className="block px-4 py-2 hover:bg-primary/10">Richmond Hill</a></li>
+                  <li><a href="/locksmith-scarborough" className="block px-4 py-2 hover:bg-primary/10">Scarborough</a></li>
+                  <li><a href="/locksmith-thornhill" className="block px-4 py-2 hover:bg-primary/10">Thornhill</a></li>
+                  <li><a href="/locksmith-vaughan" className="block px-4 py-2 hover:bg-primary/10">Vaughan</a></li>
+                  <li><a href="/locksmith-brampton" className="block px-4 py-2 hover:bg-primary/10">Brampton</a></li>
+                </ul>
+              </div>
+            </div>
             {/* Social Media Icons */}
             <div className="flex items-center gap-3">
               <a 
@@ -48,7 +70,6 @@ const Header = () => {
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
-            
             <div className="flex items-center gap-3">
               <Button 
                 className="bg-primary hover:bg-primary-glow text-primary-foreground font-semibold gap-2"
