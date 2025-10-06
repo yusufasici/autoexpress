@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone, Instagram, Facebook, Twitter } from "lucide-react";
 import { Home, Wrench, Info, Mail as MailIcon } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo2.png";
 
@@ -39,13 +40,13 @@ const Header = () => {
               onMouseLeave={() => setDesktopDropdownOpen(false)}
             >
               <button
-                className={`transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${desktopDropdownOpen ? 'text-primary' : 'text-foreground/80 hover:text-primary'}`}
+                className={`flex items-center gap-1 transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${desktopDropdownOpen ? 'text-primary' : 'text-foreground/80 hover:text-primary'}`}
                 aria-haspopup="true"
                 aria-expanded={desktopDropdownOpen}
                 tabIndex={0}
                 type="button"
               >
-                Service Areas
+                <MapPin className="h-5 w-5" /> Service Areas
               </button>
               <div className={`absolute left-0 mt-0 w-56 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
               >
@@ -146,14 +147,14 @@ const Header = () => {
             {/* Mobile Area Dropdown */}
             <div className="relative">
               <button
-                className="w-full text-left text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className="w-full flex items-center gap-2 text-left text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 aria-haspopup="true"
                 aria-expanded={mobileDropdownOpen}
                 tabIndex={0}
                 onClick={() => setMobileDropdownOpen(v => !v)}
                 type="button"
               >
-                Service Areas
+                <MapPin className="h-5 w-5" /> Service Areas
               </button>
               {mobileDropdownOpen && (
                 <div className="mt-2 w-full bg-background border border-border rounded shadow-lg z-50">
