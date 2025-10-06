@@ -28,8 +28,8 @@ const Header = () => {
             </a>
             {/* Area Dropdown */}
             <div className="relative group">
-              <button className="text-foreground/80 hover:text-primary transition-colors font-semibold">Areas</button>
-              <div className="absolute left-0 mt-2 w-56 bg-background border border-border rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity z-50">
+              <button className="text-foreground/80 hover:text-primary transition-colors font-semibold">Service Areas</button>
+              <div className="absolute left-0 mt-2 w-56 bg-background border border-border rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-50">
                 <ul className="py-2">
                   <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
                   <li><a href="/locksmith-aurora" className="block px-4 py-2 hover:bg-primary/10">Aurora</a></li>
