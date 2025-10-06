@@ -6,6 +6,7 @@ import logo from "@/assets/logo2.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-lg">
@@ -28,18 +29,22 @@ const Header = () => {
               Contact
             </a>
             {/* Area Dropdown */}
-            <div className="relative group focus-within:z-50">
+            <div
+              className="relative z-50"
+              onMouseEnter={() => setDesktopDropdownOpen(true)}
+              onMouseLeave={() => setDesktopDropdownOpen(false)}
+            >
               <button
                 className="text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 aria-haspopup="true"
-                aria-expanded="false"
+                aria-expanded={desktopDropdownOpen}
                 tabIndex={0}
                 type="button"
               >
                 Service Areas
               </button>
-              <div className="absolute left-0 mt-2 w-56 pt-2 bg-background border border-border rounded shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:pointer-events-auto transition-opacity z-50"
-                   style={{paddingTop: '0.5rem'}}>
+              <div className={`absolute left-0 mt-2 w-56 pt-2 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+              >
                 <ul className="py-2">
                   <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
                   <li><a href="/locksmith-aurora" className="block px-4 py-2 hover:bg-primary/10">Aurora</a></li>
