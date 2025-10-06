@@ -144,10 +144,11 @@ const Contact = () => {
                         { name: "Thornhill", path: "/locksmith-thornhill" },
                         { name: "Vaughan", path: "/locksmith-vaughan" },
                       ];
-                      const perLine = Math.ceil(cities.length / 2);
+                      const perLine = Math.ceil(cities.length / 3);
                       const lines = [
                         cities.slice(0, perLine),
-                        cities.slice(perLine),
+                        cities.slice(perLine, perLine * 2),
+                        cities.slice(perLine * 2),
                       ];
                       return (
                         <>
@@ -157,7 +158,7 @@ const Contact = () => {
                                 <React.Fragment key={city.name}>
                                   <a
                                     href={city.path}
-                                    className="text-primary underline hover:text-primary-glow transition-colors duration-150 text-xs md:text-sm"
+                                    className="text-primary underline hover:text-primary-glow transition-colors duration-150"
                                   >
                                     {city.name}
                                   </a>
