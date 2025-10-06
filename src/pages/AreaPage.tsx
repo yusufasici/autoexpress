@@ -75,7 +75,6 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
       {/* City-based Info (visually enhanced, 3x2 grid, card style) */}
       <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-10 mt-10 mb-10 backdrop-blur-md">
         <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3 flex items-center justify-center gap-2">
-          <MapPin className="inline-block h-8 w-8 text-primary" />
           24/7 Locksmith Services in {city}
         </h1>
         <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center">
