@@ -76,7 +76,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
       <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-10 mt-10 mb-10 backdrop-blur-md">
         <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3 flex items-center justify-center gap-2">
           <MapPin className="inline-block h-8 w-8 text-primary" />
-          24/7 Local Locksmith Services in {city}
+          24/7 Locksmith Services in {city}
         </h1>
         <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center">
           Need a locksmith in <span className="font-semibold text-primary">{city}</span>? AutoKey Express offers <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out, need a key replacement, or want to upgrade your security, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
