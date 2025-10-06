@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="space-y-2">
             {/* Logo */}
@@ -44,6 +44,28 @@ const Footer = () => {
                   Commercial Locksmithing
                 </a>
               </li>
+            </ul>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <h3 className="font-semibold text-foreground mb-4">Service Areas</h3>
+            <ul className="space-y-2">
+              <li><a href="/locksmith-toronto" className="text-sm text-muted-foreground hover:text-primary transition-colors">Toronto</a></li>
+              <li><a href="/locksmith-aurora" className="text-sm text-muted-foreground hover:text-primary transition-colors">Aurora</a></li>
+              <li><a href="/locksmith-bolton" className="text-sm text-muted-foreground hover:text-primary transition-colors">Bolton</a></li>
+              <li><a href="/locksmith-concord" className="text-sm text-muted-foreground hover:text-primary transition-colors">Concord</a></li>
+              <li><a href="/locksmith-etobicoke" className="text-sm text-muted-foreground hover:text-primary transition-colors">Etobicoke</a></li>
+              <li><a href="/locksmith-maple" className="text-sm text-muted-foreground hover:text-primary transition-colors">Maple</a></li>
+              <li><a href="/locksmith-markham" className="text-sm text-muted-foreground hover:text-primary transition-colors">Markham</a></li>
+              <li><a href="/locksmith-mississauga" className="text-sm text-muted-foreground hover:text-primary transition-colors">Mississauga</a></li>
+              <li><a href="/locksmith-northyork" className="text-sm text-muted-foreground hover:text-primary transition-colors">North York</a></li>
+              <li><a href="/locksmith-oakville" className="text-sm text-muted-foreground hover:text-primary transition-colors">Oakville</a></li>
+              <li><a href="/locksmith-richmondhill" className="text-sm text-muted-foreground hover:text-primary transition-colors">Richmond Hill</a></li>
+              <li><a href="/locksmith-scarborough" className="text-sm text-muted-foreground hover:text-primary transition-colors">Scarborough</a></li>
+              <li><a href="/locksmith-thornhill" className="text-sm text-muted-foreground hover:text-primary transition-colors">Thornhill</a></li>
+              <li><a href="/locksmith-vaughan" className="text-sm text-muted-foreground hover:text-primary transition-colors">Vaughan</a></li>
+              <li><a href="/locksmith-brampton" className="text-sm text-muted-foreground hover:text-primary transition-colors">Brampton</a></li>
             </ul>
           </div>
 
