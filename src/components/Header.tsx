@@ -6,6 +6,8 @@ import logo from "@/assets/logo2.png";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-lg">
       <div className="container mx-auto px-3">
@@ -27,9 +29,26 @@ const Header = () => {
               Contact
             </a>
             {/* Area Dropdown */}
-            <div className="relative group">
-              <button className="text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">Service Areas</button>
-              <div className="absolute left-0 mt-2 w-56 bg-background border border-border rounded shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:pointer-events-auto transition-opacity z-50">
+            <div
+              className="relative"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+              onFocus={() => setDropdownOpen(true)}
+              onBlur={e => {
+                // Only close if focus moves outside the dropdown
+                if (!e.currentTarget.contains(e.relatedTarget)) setDropdownOpen(false);
+              }}
+            >
+              <button
+                className="text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                aria-haspopup="true"
+                aria-expanded={dropdownOpen}
+                tabIndex={0}
+                onClick={() => setDropdownOpen(v => !v)}
+              >
+                Service Areas
+              </button>
+              <div className={`absolute left-0 mt-2 w-56 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${dropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
                 <ul className="py-2">
                   <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
                   <li><a href="/locksmith-aurora" className="block px-4 py-2 hover:bg-primary/10">Aurora</a></li>
