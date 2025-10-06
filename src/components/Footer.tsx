@@ -50,7 +50,7 @@ const Footer = () => {
           {/* Service Areas */}
           <div>
             <h3 className="font-semibold text-foreground mb-4">Service Areas</h3>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-3 gap-x-4 gap-y-2">
               <li><a href="/locksmith-toronto" className="text-sm text-muted-foreground hover:text-primary transition-colors">Toronto</a></li>
               <li><a href="/locksmith-aurora" className="text-sm text-muted-foreground hover:text-primary transition-colors">Aurora</a></li>
               <li><a href="/locksmith-bolton" className="text-sm text-muted-foreground hover:text-primary transition-colors">Bolton</a></li>
