@@ -80,7 +80,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
         <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center">
           Need a locksmith in <span className="font-semibold text-primary">{city}</span>? We offer <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across {city}. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
         </p>
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-3 mb-6">
           {/* Card 1 */}
           <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-2 px-3 flex items-center gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
