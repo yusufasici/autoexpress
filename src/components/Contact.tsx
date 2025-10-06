@@ -144,11 +144,10 @@ const Contact = () => {
                         { name: "Thornhill", path: "/locksmith-thornhill" },
                         { name: "Vaughan", path: "/locksmith-vaughan" },
                       ];
-                      const perLine = Math.ceil(cities.length / 3);
+                      const perLine = Math.ceil(cities.length / 2);
                       const lines = [
                         cities.slice(0, perLine),
-                        cities.slice(perLine, perLine * 2),
-                        cities.slice(perLine * 2),
+                        cities.slice(perLine),
                       ];
                       return (
                         <>
