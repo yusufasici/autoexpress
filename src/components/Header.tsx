@@ -27,9 +27,9 @@ const Header = () => {
               Contact
             </a>
             {/* Area Dropdown */}
-            <div className="relative group">
-              <button className="text-foreground/80 hover:text-primary transition-colors font-semibold">Service Areas</button>
-              <div className="absolute left-0 mt-2 w-56 bg-background border border-border rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-50">
+            <div className="relative">
+              <button className="text-foreground/80 hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary peer">Service Areas</button>
+              <div className="absolute left-0 mt-2 w-56 bg-background border border-border rounded shadow-lg opacity-0 pointer-events-none peer-hover:opacity-100 peer-focus:opacity-100 peer-focus:pointer-events-auto peer-hover:pointer-events-auto hover:opacity-100 hover:pointer-events-auto transition-opacity z-50">
                 <ul className="py-2">
                   <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
                   <li><a href="/locksmith-aurora" className="block px-4 py-2 hover:bg-primary/10">Aurora</a></li>
