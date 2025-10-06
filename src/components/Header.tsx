@@ -38,7 +38,8 @@ const Header = () => {
               >
                 Service Areas
               </button>
-              <div className="absolute left-0 mt-2 w-56 bg-background border border-border rounded shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:pointer-events-auto transition-opacity z-50">
+              <div className="absolute left-0 mt-2 w-56 pt-2 bg-background border border-border rounded shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:pointer-events-auto transition-opacity z-50"
+                   style={{paddingTop: '0.5rem'}}>
                 <ul className="py-2">
                   <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
                   <li><a href="/locksmith-aurora" className="block px-4 py-2 hover:bg-primary/10">Aurora</a></li>
