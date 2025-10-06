@@ -128,8 +128,8 @@ const Contact = () => {
                   <div className="text-sm text-muted-foreground">
                     {[
                       { name: "Toronto", path: "/locksmith-toronto" },
+                      { name: "Aurora", path: "/locksmith-aurora" },
                       { name: "Bolton", path: "/locksmith-bolton" },
-                      { name: "Brampton", path: "/locksmith-brampton" },
                       { name: "Concord", path: "/locksmith-concord" },
                       { name: "Etobicoke", path: "/locksmith-etobicoke" },
                       { name: "Maple", path: "/locksmith-maple" },
@@ -141,6 +141,7 @@ const Contact = () => {
                       { name: "Scarborough", path: "/locksmith-scarborough" },
                       { name: "Thornhill", path: "/locksmith-thornhill" },
                       { name: "Vaughan", path: "/locksmith-vaughan" },
+                      { name: "Brampton", path: "/locksmith-brampton" },
                     ].map((city, idx, arr) => (
                       <React.Fragment key={city.name}>
                         <a
