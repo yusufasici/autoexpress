@@ -157,7 +157,7 @@ const Contact = () => {
                                 <React.Fragment key={city.name}>
                                   <a
                                     href={city.path}
-                                    className="text-primary underline hover:text-primary-glow transition-colors duration-150"
+                                    className="text-primary underline hover:text-primary-glow transition-colors duration-150 text-xs md:text-sm"
                                   >
                                     {city.name}
                                   </a>
