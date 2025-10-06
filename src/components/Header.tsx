@@ -35,7 +35,7 @@ const Header = () => {
               onMouseLeave={() => setDesktopDropdownOpen(false)}
             >
               <button
-                className="text-foreground/80 hover:text-primary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className={`transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${desktopDropdownOpen ? 'text-primary' : 'text-foreground/80 hover:text-primary'}`}
                 aria-haspopup="true"
                 aria-expanded={desktopDropdownOpen}
                 tabIndex={0}
