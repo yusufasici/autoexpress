@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone, Instagram, Facebook, Twitter } from "lucide-react";
+import { Home, Wrench, Info, Mail as MailIcon } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo2.png";
 
@@ -19,14 +21,17 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#services" className="text-foreground/80 hover:text-primary transition-colors">
-              Services
+            <a href="/" className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors font-semibold">
+              <Home className="h-5 w-5" /> Home
             </a>
-            <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">
-              About
+            <a href="#services" className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors">
+              <Wrench className="h-5 w-5" /> Services
             </a>
-            <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">
-              Contact
+            <a href="#about" className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors">
+              <Info className="h-5 w-5" /> About
+            </a>
+            <a href="#contact" className="flex items-center gap-1 text-foreground/80 hover:text-primary transition-colors">
+              <MailIcon className="h-5 w-5" /> Contact
             </a>
             {/* Area Dropdown */}
             <div
@@ -35,15 +40,15 @@ const Header = () => {
               onMouseLeave={() => setDesktopDropdownOpen(false)}
             >
               <button
-                className="text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className={`flex items-center gap-1 transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${desktopDropdownOpen ? 'text-primary' : 'text-foreground/80 hover:text-primary'}`}
                 aria-haspopup="true"
                 aria-expanded={desktopDropdownOpen}
                 tabIndex={0}
                 type="button"
               >
-                Service Areas
+                <MapPin className="h-5 w-5" /> Service Areas
               </button>
-              <div className={`absolute left-0 mt-2 w-56 pt-2 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+              <div className={`absolute left-0 mt-0 w-56 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
               >
                 <ul className="py-2">
                   <li><a href="/locksmith-toronto" className="block px-4 py-2 hover:bg-primary/10">Toronto</a></li>
@@ -127,20 +132,29 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border space-y-4">
-            <a href="#services" className="block text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>Services</a>
-            <a href="#about" className="block text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>About</a>
-            <a href="#contact" className="block text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>Contact</a>
+            <a href="/" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors py-2 font-semibold" onClick={() => setIsMenuOpen(false)}>
+              <Home className="h-5 w-5" /> Home
+            </a>
+            <a href="#services" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
+              <Wrench className="h-5 w-5" /> Services
+            </a>
+            <a href="#about" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
+              <Info className="h-5 w-5" /> About
+            </a>
+            <a href="#contact" className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
+              <MailIcon className="h-5 w-5" /> Contact
+            </a>
             {/* Mobile Area Dropdown */}
             <div className="relative">
               <button
-                className="w-full text-left text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className="w-full flex items-center gap-2 text-left text-foreground/80 hover:text-primary transition-colors font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 aria-haspopup="true"
                 aria-expanded={mobileDropdownOpen}
                 tabIndex={0}
                 onClick={() => setMobileDropdownOpen(v => !v)}
                 type="button"
               >
-                Service Areas
+                <MapPin className="h-5 w-5" /> Service Areas
               </button>
               {mobileDropdownOpen && (
                 <div className="mt-2 w-full bg-background border border-border rounded shadow-lg z-50">
