@@ -126,7 +126,7 @@ const Contact = () => {
                 <div>
                   <div className="font-bold text-foreground text-base mb-1">Service Area</div>
                   <div className="text-sm text-muted-foreground">
-                    Serving: Toronto, Bolton, Brampton, Concord, Etobicoke, Maple, Markham, Mississauga, North York, Oakville, Richmond Hill, Scarborough, Thornhill, Vaughan<br />
+                    Toronto - Bolton - Brampton - Concord - Etobicoke - Maple - Markham - Mississauga - North York - Oakville - Richmond Hill - Scarborough - Thornhill - Vaughan<br />
                     Mobile service - We come to you!
                   </div>
                 </div>
