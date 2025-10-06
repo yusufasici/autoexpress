@@ -48,7 +48,6 @@ const Header = () => {
                   <li><a href="/locksmith-brampton" className="block px-4 py-2 hover:bg-primary/10">Brampton</a></li>
                 </ul>
               </div>
-              </div>
             </div>
             {/* Social Media Icons */}
             <div className="flex items-center gap-3">
@@ -187,7 +186,7 @@ const Header = () => {
           </nav>
         )}
       </div>
-    </header>
+      </header>
   );
 };
 
