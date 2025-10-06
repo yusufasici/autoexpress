@@ -94,7 +94,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
             <Award className="h-6 w-6 text-primary mt-1" />
             <span>Licenced &amp; Insured</span>
           </div>
-          <div className="flex items-start gap-3">
+          <div className="flex items-start gap-3 sm:col-span-2">
             <DollarSign className="h-6 w-6 text-primary mt-1" />
             <span>Upfront Pricing &amp; No Hidden Fees</span>
           </div>
