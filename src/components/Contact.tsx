@@ -139,7 +139,7 @@ const Contact = () => {
                         { name: "Mississauga", path: "/locksmith-mississauga" },
                         { name: "North York", path: "/locksmith-northyork" },
                         { name: "Oakville", path: "/locksmith-oakville" },
-                        { name: "RichmondHill", path: "/locksmith-richmondhill" },
+                        { name: "Richmond Hill", path: "/locksmith-richmondhill" },
                         { name: "Scarborough", path: "/locksmith-scarborough" },
                         { name: "Thornhill", path: "/locksmith-thornhill" },
                         { name: "Vaughan", path: "/locksmith-vaughan" },
