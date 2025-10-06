@@ -83,7 +83,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-6">
           {/* Card 1 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <Clock className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
             <div>
@@ -92,7 +92,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
             </div>
           </div>
           {/* Card 3 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <Award className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
             <div>
@@ -101,7 +101,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
             </div>
           </div>
           {/* Card 4 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <DollarSign className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
             <div>
@@ -110,7 +110,7 @@ const AreaPage: React.FC<AreaPageProps> = ({ city, phone = "(647) 906-8124" }) =
             </div>
           </div>
           {/* Card 5 */}
-          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
+          <div className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg p-3 flex items-start gap-2 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             <MapPin className="h-7 w-7 text-primary flex-shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1" />
             <div>
