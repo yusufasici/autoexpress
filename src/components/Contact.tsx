@@ -93,108 +93,118 @@ const Contact = () => {
             {/* Left Column: Contact Info */}
             <div className="flex flex-col gap-6 flex-1 h-full justify-between">
               {/* Emergency Hotline Card */}
-              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 flex items-center gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-2">
-                  <Phone className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Phone className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <div className="font-bold text-foreground text-base mb-1">Emergency Hotline</div>
-                <div className="text-sm text-muted-foreground mb-1">Available 24/7 for emergencies</div>
-                <a href="tel:+16479068124" className="text-primary font-semibold text-base">(647) 906-8124</a>
+                <div className="flex-1">
+                  <div className="font-bold text-foreground text-base mb-0.5">Emergency Hotline</div>
+                  <div className="text-sm text-muted-foreground mb-0.5">Available 24/7 for emergencies</div>
+                  <a href="tel:+16479068124" className="text-primary font-semibold text-base">(647) 906-8124</a>
+                </div>
               </div>
               {/* WhatsApp Card */}
-              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 flex items-center gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="currentColor" className="text-primary group-hover:scale-110 transition-transform duration-300"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.832 4.584 2.236 6.37L4.062 28.25a1 1 0 0 0 1.312 1.312l6.88-2.174A11.94 11.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.94 9.94 0 0 1-4.687-1.188 1 1 0 0 0-.75-.062l-5.062 1.6 1.6-5.062a1 1 0 0 0-.062-.75A9.94 9.94 0 0 1 6 15c0-5.523 4.477-10 10-10zm-4.5 6a1 1 0 0 0-.969 1.25c.188.75.594 2.188 1.406 3.406.812 1.219 2.031 2.594 4.031 3.594 2 .999 2.938.812 3.406.719a1 1 0 0 0 .75-.719c.094-.375.406-1.5.531-1.969a1 1 0 0 0-.25-.969l-1.25-1.25a1 1 0 0 0-1.406 0l-.406.406c-.25.25-.656.25-.906 0l-1.25-1.25a.642.642 0 0 1 0-.906l.406-.406a1 1 0 0 0 0-1.406l-1.25-1.25A1 1 0 0 0 11.5 11z"/></svg>
+                <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="currentColor" className="text-primary group-hover:scale-110 transition-transform duration-300"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.832 4.584 2.236 6.37L4.062 28.25a1 1 0 0 0 1.312 1.312l6.88-2.174A11.94 11.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.94 9.94 0 0 1-4.687-1.188 1 1 0 0 0-.75-.062l-5.062 1.6 1.6-5.062a1 1 0 0 0-.062-.75A9.94 9.94 0 0 1 6 15c0-5.523 4.477-10 10-10zm-4.5 6a1 1 0 0 0-.969 1.25c.188.75.594 2.188 1.406 3.406.812 1.219 2.031 2.594 4.031 3.594 2 .999 2.938.812 3.406.719a1 1 0 0 0 .75-.719c.094-.375.406-1.5.531-1.969a1 1 0 0 0-.25-.969l-1.25-1.25a1 1 0 0 0-1.406 0l-.406.406c-.25.25-.656.25-.906 0l-1.25-1.25a.642.642 0 0 1 0-.906l.406-.406a1 1 0 0 0 0-1.406l-1.25-1.25A1 1 0 0 0 11.5 11z"/></svg>
                 </div>
-                <div className="font-bold text-foreground text-base mb-1">WhatsApp Message</div>
-                <div className="text-sm text-muted-foreground mb-1">Chat with us instantly on WhatsApp</div>
-                <a
-                  href="https://wa.me/16479068124"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary font-semibold text-base"
-                >
-                  Send a WhatsApp Message
-                </a>
+                <div className="flex-1">
+                  <div className="font-bold text-foreground text-base mb-0.5">WhatsApp Message</div>
+                  <div className="text-sm text-muted-foreground mb-0.5">Chat with us instantly on WhatsApp</div>
+                  <a
+                    href="https://wa.me/16479068124"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary font-semibold text-base"
+                  >
+                    Send a WhatsApp Message
+                  </a>
+                </div>
               </div>
               {/* Service Area Card */}
-              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 flex items-center gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-2">
-                  <MapPin className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <MapPin className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <div className="font-bold text-foreground text-base mb-1">Service Area</div>
-                <div className="text-sm text-muted-foreground mb-1">
-                  {(() => {
-                    const cities = [
-                      { name: "Toronto", path: "/locksmith-toronto" },
-                      { name: "Aurora", path: "/locksmith-aurora" },
-                      { name: "Bolton", path: "/locksmith-bolton" },
-                      { name: "Brampton", path: "/locksmith-brampton" },
-                      { name: "Concord", path: "/locksmith-concord" },
-                      { name: "Etobicoke", path: "/locksmith-etobicoke" },
-                      { name: "Maple", path: "/locksmith-maple" },
-                      { name: "Markham", path: "/locksmith-markham" },
-                      { name: "Mississauga", path: "/locksmith-mississauga" },
-                      { name: "North York", path: "/locksmith-northyork" },
-                      { name: "Oakville", path: "/locksmith-oakville" },
-                      { name: "Richmond Hill", path: "/locksmith-richmondhill" },
-                      { name: "Scarborough", path: "/locksmith-scarborough" },
-                      { name: "Thornhill", path: "/locksmith-thornhill" },
-                      { name: "Vaughan", path: "/locksmith-vaughan" },
-                    ];
-                    const perLine = Math.ceil(cities.length / 3);
-                    const lines = [
-                      cities.slice(0, perLine),
-                      cities.slice(perLine, perLine * 2),
-                      cities.slice(perLine * 2),
-                    ];
-                    return (
-                      <>
-                        {lines.map((line, lineIdx) => (
-                          <React.Fragment key={lineIdx}>
-                            {line.map((city, idx) => (
-                              <React.Fragment key={city.name}>
-                                <a
-                                  href={city.path}
-                                  className="text-primary underline hover:text-primary-glow transition-colors duration-150"
-                                >
-                                  {city.name}
-                                </a>
-                                {idx < line.length - 1 && <span> &bull; </span>}
-                              </React.Fragment>
-                            ))}
-                            {lineIdx < lines.length - 1 && <br />}
-                          </React.Fragment>
-                        ))}
-                      </>
-                    );
-                  })()}
-                  <br />
-                  Mobile service - We come to you!
+                <div className="flex-1">
+                  <div className="font-bold text-foreground text-base mb-0.5">Service Area</div>
+                  <div className="text-sm text-muted-foreground mb-0.5">
+                    {(() => {
+                      const cities = [
+                        { name: "Toronto", path: "/locksmith-toronto" },
+                        { name: "Aurora", path: "/locksmith-aurora" },
+                        { name: "Bolton", path: "/locksmith-bolton" },
+                        { name: "Brampton", path: "/locksmith-brampton" },
+                        { name: "Concord", path: "/locksmith-concord" },
+                        { name: "Etobicoke", path: "/locksmith-etobicoke" },
+                        { name: "Maple", path: "/locksmith-maple" },
+                        { name: "Markham", path: "/locksmith-markham" },
+                        { name: "Mississauga", path: "/locksmith-mississauga" },
+                        { name: "North York", path: "/locksmith-northyork" },
+                        { name: "Oakville", path: "/locksmith-oakville" },
+                        { name: "Richmond Hill", path: "/locksmith-richmondhill" },
+                        { name: "Scarborough", path: "/locksmith-scarborough" },
+                        { name: "Thornhill", path: "/locksmith-thornhill" },
+                        { name: "Vaughan", path: "/locksmith-vaughan" },
+                      ];
+                      const perLine = Math.ceil(cities.length / 3);
+                      const lines = [
+                        cities.slice(0, perLine),
+                        cities.slice(perLine, perLine * 2),
+                        cities.slice(perLine * 2),
+                      ];
+                      return (
+                        <>
+                          {lines.map((line, lineIdx) => (
+                            <React.Fragment key={lineIdx}>
+                              {line.map((city, idx) => (
+                                <React.Fragment key={city.name}>
+                                  <a
+                                    href={city.path}
+                                    className="text-primary underline hover:text-primary-glow transition-colors duration-150"
+                                  >
+                                    {city.name}
+                                  </a>
+                                  {idx < line.length - 1 && <span> &bull; </span>}
+                                </React.Fragment>
+                              ))}
+                              {lineIdx < lines.length - 1 && <br />}
+                            </React.Fragment>
+                          ))}
+                        </>
+                      );
+                    })()}
+                    <br />
+                    Mobile service - We come to you!
+                  </div>
                 </div>
               </div>
               {/* Business Hours Card */}
-              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 flex items-center gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-2">
-                  <Clock className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Clock className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <div className="font-bold text-foreground text-base mb-1">Business Hours</div>
-                <div className="text-primary font-semibold text-base">24/7 Emergency Service</div>
-                <div className="text-sm text-muted-foreground mb-1">Standard Hours: Mon-Sat 8AM-6PM</div>
+                <div className="flex-1">
+                  <div className="font-bold text-foreground text-base mb-0.5">Business Hours</div>
+                  <div className="text-primary font-semibold text-base">24/7 Emergency Service</div>
+                  <div className="text-sm text-muted-foreground mb-0.5">Standard Hours: Mon-Sat 8AM-6PM</div>
+                </div>
               </div>
               {/* Email Us Card */}
-              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-6 space-y-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 text-center">
+              <div className="group bg-card/50 backdrop-blur-sm border border-border rounded-lg p-3 flex items-center gap-3 relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-2">
-                  <Mail className="h-7 w-7 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <Mail className="h-5 w-5 text-primary group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <div className="font-bold text-foreground text-base mb-1">Email Us</div>
-                <div className="text-sm text-muted-foreground mb-1">Get a response within 24 hours</div>
-                <a href="mailto:info@autokeyexpress.ca" className="text-primary font-semibold text-base">info@autokeyexpress.ca</a>
+                <div className="flex-1">
+                  <div className="font-bold text-foreground text-base mb-0.5">Email Us</div>
+                  <div className="text-sm text-muted-foreground mb-0.5">Get a response within 24 hours</div>
+                  <a href="mailto:info@autokeyexpress.ca" className="text-primary font-semibold text-base">info@autokeyexpress.ca</a>
+                </div>
               </div>
             </div>
 
