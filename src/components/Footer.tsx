@@ -61,7 +61,7 @@ const Footer = () => {
               <li><a href="/locksmith-mississauga" className="text-sm text-muted-foreground hover:text-primary transition-colors">Mississauga</a></li>
               <li><a href="/locksmith-northyork" className="text-sm text-muted-foreground hover:text-primary transition-colors">North York</a></li>
               <li><a href="/locksmith-oakville" className="text-sm text-muted-foreground hover:text-primary transition-colors">Oakville</a></li>
-              <li><a href="/locksmith-richmondhill" className="text-sm text-muted-foreground hover:text-primary transition-colors">Richmond Hill</a></li>
+              <li><a href="/locksmith-richmondhill" className="text-sm text-muted-foreground hover:text-primary transition-colors">Rich. Hill</a></li>
               <li><a href="/locksmith-scarborough" className="text-sm text-muted-foreground hover:text-primary transition-colors">Scarborough</a></li>
               <li><a href="/locksmith-thornhill" className="text-sm text-muted-foreground hover:text-primary transition-colors">Thornhill</a></li>
               <li><a href="/locksmith-vaughan" className="text-sm text-muted-foreground hover:text-primary transition-colors">Vaughan</a></li>
