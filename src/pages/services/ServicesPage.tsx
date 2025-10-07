@@ -79,12 +79,39 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
       {/* Main Card Container (like city pages) */}
       {services && services.length > 0 && (
         <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-8 mt-8 mb-10 backdrop-blur-md">
-          {/* 24/7 Service Text Block */}
+          {/* 24/7 Service Text Block - styled like city pages */}
           <div className="mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary mb-3 text-center">24/7 Locksmith Service</h2>
-            <p className="mb-0 text-lg md:text-xl text-muted-foreground text-center">
-              Need a locksmith? We offer <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across the GTA. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-3 text-center tracking-tight">24/7 Locksmith Service in the GTA</h2>
+            <p className="mb-6 text-lg md:text-xl text-foreground text-center">
+              Need a locksmith <span className="text-primary font-semibold">near you</span>? We offer <span className="font-bold">fast</span>, <span className="font-bold">reliable</span>, and <span className="font-bold">professional</span> locksmith services for vehicles, homes, and businesses across the <span className="text-primary font-semibold">GTA</span>. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="text-primary font-bold">24/7</span>.
             </p>
+            <div className="flex flex-wrap justify-center gap-4 mb-4">
+              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
+                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span className="font-semibold">24/7 Emergency</span>
+              </div>
+              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
+                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01"/><circle cx="12" cy="12" r="10"/></svg>
+                <span className="font-semibold">Fast Response</span>
+              </div>
+              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
+                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                <span className="font-semibold">Licensed & Insured</span>
+              </div>
+              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
+                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+                <span className="font-semibold">Upfront Pricing</span>
+              </div>
+              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
+                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M21 21l-6-6"/><circle cx="11" cy="11" r="8"/></svg>
+                <span className="font-semibold">Mobile Service</span>
+              </div>
+              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
+                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 17.75l-6.172-6.172a4 4 0 015.656-5.656 4 4 0 015.656 5.656L12 17.75z"/></svg>
+                <span className="font-semibold">Highly Rated</span>
+              </div>
+            </div>
+            <p className="text-base md:text-lg text-primary text-center font-semibold mt-2">Serving all neighborhoods in the GTA. Call us now for immediate assistance!</p>
           </div>
           {/* Card Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-3 mb-8">
