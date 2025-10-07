@@ -113,7 +113,7 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
             </div>
             <p className="text-base md:text-lg text-primary text-center font-semibold mt-2">Serving all neighborhoods in the GTA. Call us now for immediate assistance!</p>
           </div>
-          {/* Card Grid */}
+          {/* Card Grid
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-3 mb-8">
             {services.map((service) => (
               <div
@@ -126,7 +126,7 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
                 <span className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base text-center w-full">{service}</span>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       )}
       {children}
