@@ -82,20 +82,23 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
           {/* 24/7 Service Text Block - styled like city pages */}
           <div className="mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-3 text-center tracking-tight">24/7 Locksmith Service in the GTA</h2>
-            <p className="mb-6 text-lg md:text-xl text-foreground text-center">
-              Need a locksmith <span className="text-primary font-semibold">near you</span>? We offer <span className="font-bold">fast</span>, <span className="font-bold">reliable</span>, and <span className="font-bold">professional</span> locksmith services for vehicles, homes, and businesses across the <span className="text-primary font-semibold">GTA</span>. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="text-primary font-bold">24/7</span>.
+            <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center">
+              Need a locksmith <span className="text-primary font-semibold">near you</span>? We offer <span className="font-bold text-foreground">fast</span>, <span className="font-bold text-foreground">reliable</span>, and <span className="font-bold text-foreground">professional</span> locksmith services for vehicles, homes, and businesses across the <span className="text-primary font-semibold">GTA</span>. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="text-primary font-bold">24/7</span>.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
               {services.slice(0, 6).map((service) => (
                 <div
                   key={service}
-                  className="bg-background/60 border border-primary/30 rounded-lg px-4 py-4 flex items-center justify-center font-semibold text-lg text-primary text-center min-h-[56px]"
+                  className="group bg-background/70 border border-primary/40 rounded-lg px-4 py-4 flex items-center justify-center font-semibold text-lg text-foreground text-center min-h-[56px] transition-all duration-200 hover:bg-primary/10 hover:border-primary/70 hover:text-primary cursor-pointer"
                 >
                   {service}
                 </div>
               ))}
             </div>
-            <p className="text-base md:text-lg text-primary text-center font-semibold mt-2">Serving all neighborhoods in the GTA. Call us now for immediate assistance!</p>
+            <p className="text-base md:text-lg text-center mt-2">
+              <span className="text-primary font-semibold">Serving all neighborhoods in the GTA.</span>
+              <span className="text-muted-foreground font-normal"> Call us now for immediate assistance!</span>
+            </p>
           </div>
         </div>
       )}
