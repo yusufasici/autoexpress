@@ -102,22 +102,22 @@ const About = () => {
               <MapPin className="h-7 w-7 text-primary" />
               Our Service Areas
             </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              <a href="/locksmith-toronto" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Toronto</a>
-              <a href="/locksmith-aurora" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Aurora</a>
-              <a href="/locksmith-bolton" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Bolton</a>
-              <a href="/locksmith-brampton" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Brampton</a>
-              <a href="/locksmith-concord" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Concord</a>
-              <a href="/locksmith-etobicoke" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Etobicoke</a>
-              <a href="/locksmith-maple" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Maple</a>
-              <a href="/locksmith-markham" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Markham</a>
-              <a href="/locksmith-mississauga" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Mississauga</a>
-              <a href="/locksmith-northyork" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">North York</a>
-              <a href="/locksmith-oakville" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Oakville</a>
-              <a href="/locksmith-richmondhill" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Richmond Hill</a>
-              <a href="/locksmith-scarborough" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Scarborough</a>
-              <a href="/locksmith-thornhill" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Thornhill</a>
-              <a href="/locksmith-vaughan" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Vaughan</a>
+            <div className="grid grid-cols-3 grid-rows-5 gap-4">
+              <a href="/locksmith-toronto" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Toronto</a>
+              <a href="/locksmith-aurora" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Aurora</a>
+              <a href="/locksmith-bolton" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Bolton</a>
+              <a href="/locksmith-brampton" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Brampton</a>
+              <a href="/locksmith-concord" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Concord</a>
+              <a href="/locksmith-etobicoke" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Etobicoke</a>
+              <a href="/locksmith-maple" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Maple</a>
+              <a href="/locksmith-markham" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Markham</a>
+              <a href="/locksmith-mississauga" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Mississauga</a>
+              <a href="/locksmith-northyork" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith North York</a>
+              <a href="/locksmith-oakville" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Oakville</a>
+              <a href="/locksmith-richmondhill" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Richmond Hill</a>
+              <a href="/locksmith-scarborough" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Scarborough</a>
+              <a href="/locksmith-thornhill" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Thornhill</a>
+              <a href="/locksmith-vaughan" className="block bg-primary/10 border border-primary/20 rounded-lg px-4 py-3 text-center font-semibold text-primary hover:bg-primary/20 transition-all shadow hover:scale-105">Locksmith Vaughan</a>
             </div>
             <p className="text-sm text-muted-foreground text-center mt-4">Click your city to view local locksmith services.</p>
           </div>
