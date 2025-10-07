@@ -53,6 +53,12 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
       <div className="flex items-center justify-center">
         <img src={logomascot} className="h-56 w-auto opacity-50 object-contain" alt="AutoKey Express Mascot" />
       </div>
+      
+      {/* Subtitle */}
+      <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto">
+        Automotive • Residential • Commercial • Locksmith Services<br />
+      </p>
+
         {/* CTA Buttons - now inside card container */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
         <Button size="lg" className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]" asChild>
