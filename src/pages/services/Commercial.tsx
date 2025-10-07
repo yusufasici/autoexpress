@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesPage from "./ServicesPage";
-import heroBusiness from "@/assets/commercial-access.jpg";
+import heroBusiness from "@/assets/hero-locksmith6.jpg";
 
 const Commercial: React.FC = () => (
   <ServicesPage
