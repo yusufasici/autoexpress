@@ -12,34 +12,36 @@ import React from "react";
 
 interface HeroProps {
   children?: React.ReactNode;
+  image?: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ children }) => {
+const Hero: React.FC<HeroProps> = ({ children, image }) => {
+  // If image is provided, use it as the only hero image. Otherwise, use carousel.
+  const heroImages = image ? [image] : [heroImage1, heroImage8, heroImage6, heroImage4];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const heroImages = [heroImage1, heroImage8, heroImage6, heroImage4];
 
   useEffect(() => {
-    const intervalMs = 5000; // 5 seconds per slide
+    if (image) return; // No carousel if a single image is provided
+    const intervalMs = 5000;
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
       );
     }, intervalMs);
     return () => clearInterval(interval);
-  }, [heroImages.length]);
+  }, [heroImages.length, image]);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background Images with Carousel */}
+      {/* Background Image or Carousel */}
       <div className="absolute inset-0">
-        {heroImages.map((image, index) => (
+        {heroImages.map((img, index) => (
           <div
             key={index}
             className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
               index === currentImageIndex ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{ backgroundImage: `url(${image})` }}
+            style={{ backgroundImage: `url(${img})` }}
           />
         ))}
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />

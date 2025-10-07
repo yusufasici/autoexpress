@@ -1,10 +1,12 @@
 import React from "react";
 import ServicesPage from "./ServicesPage";
+import heroBusiness from "@/assets/commercial-access.jpg";
 
 const Commercial: React.FC = () => (
   <ServicesPage
     title="Commercial Locksmith Services"
     description="Business lockouts, master key systems, access control, and security solutions for offices, retail, and industrial properties."
+    heroImage={heroBusiness}
   >
     {/* Add detailed commercial locksmith content here */}
     <div className="prose mx-auto">

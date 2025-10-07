@@ -12,10 +12,11 @@ import { Button } from "@/components/ui/button";
 interface ServicesPageProps {
   title: string;
   description: string;
+  heroImage?: string;
   children?: React.ReactNode;
 }
 
-const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, children }) => (
+const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroImage, children }) => (
   <div className="min-h-screen bg-background">
     <Header />
     <Helmet>
@@ -25,7 +26,7 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, childre
       <meta property="og:title" content={`${title} | AutoKey Express`} />
       <meta property="og:description" content={description} />
     </Helmet>
-    <Hero>
+    <Hero image={heroImage}>
       <div className="flex items-center justify-center">
         <img src={logomascot} className="h-56 w-auto opacity-50 object-contain" alt="AutoKey Express Mascot" />
       </div>
