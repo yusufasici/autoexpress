@@ -57,11 +57,10 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
         {title}
       </h1>
       <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center max-w-2xl mx-auto">{description}</p>
-      {/* Service Cards Grid (styled like AreaPage) */}
+      {/* Floating Card Grid (like city pages) */}
       {services && services.length > 0 && (
-        <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-10 mt-10 mb-10 backdrop-blur-md">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">Our Locksmith Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-3 mb-6">
+        <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-10 mt-8 mb-10 backdrop-blur-md">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-3">
             {services.map((service) => (
               <div
                 key={service}
