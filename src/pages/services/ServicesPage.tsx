@@ -57,7 +57,25 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
         {title}
       </h1>
       <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center max-w-2xl mx-auto">{description}</p>
-      <ServiceCardGrid services={services} page={window.location.pathname} />
+      {/* Service Cards Grid (styled like AreaPage) */}
+      {services && services.length > 0 && (
+        <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-10 mt-10 mb-10 backdrop-blur-md">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6 text-center">Our Locksmith Services</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-3 mb-6">
+            {services.map((service) => (
+              <div
+                key={service}
+                className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-4 px-3 flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0 cursor-pointer"
+                tabIndex={0}
+                aria-label={service}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <span className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base text-center w-full">{service}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 mt-8">
         <Button size="lg" className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]" asChild>
           <a href="tel:+16479068124">
