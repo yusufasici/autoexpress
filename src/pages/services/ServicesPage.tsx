@@ -85,48 +85,18 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
             <p className="mb-6 text-lg md:text-xl text-foreground text-center">
               Need a locksmith <span className="text-primary font-semibold">near you</span>? We offer <span className="font-bold">fast</span>, <span className="font-bold">reliable</span>, and <span className="font-bold">professional</span> locksmith services for vehicles, homes, and businesses across the <span className="text-primary font-semibold">GTA</span>. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="text-primary font-bold">24/7</span>.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-4">
-              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
-                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                <span className="font-semibold">24/7 Emergency</span>
-              </div>
-              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
-                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M13 16h-1v-4h-1m1-4h.01"/><circle cx="12" cy="12" r="10"/></svg>
-                <span className="font-semibold">Fast Response</span>
-              </div>
-              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
-                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-                <span className="font-semibold">Licensed & Insured</span>
-              </div>
-              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
-                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
-                <span className="font-semibold">Upfront Pricing</span>
-              </div>
-              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
-                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M21 21l-6-6"/><circle cx="11" cy="11" r="8"/></svg>
-                <span className="font-semibold">Mobile Service</span>
-              </div>
-              <div className="flex items-center gap-2 bg-background/60 border border-primary/30 rounded-lg px-4 py-2 min-w-[180px]">
-                <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 17.75l-6.172-6.172a4 4 0 015.656-5.656 4 4 0 015.656 5.656L12 17.75z"/></svg>
-                <span className="font-semibold">Highly Rated</span>
-              </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+              {services.slice(0, 6).map((service) => (
+                <div
+                  key={service}
+                  className="bg-background/60 border border-primary/30 rounded-lg px-4 py-4 flex items-center justify-center font-semibold text-lg text-primary text-center min-h-[56px]"
+                >
+                  {service}
+                </div>
+              ))}
             </div>
             <p className="text-base md:text-lg text-primary text-center font-semibold mt-2">Serving all neighborhoods in the GTA. Call us now for immediate assistance!</p>
           </div>
-          {/* Card Grid
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-3 mb-8">
-            {services.map((service) => (
-              <div
-                key={service}
-                className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-4 px-3 flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0 cursor-pointer"
-                tabIndex={0}
-                aria-label={service}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                <span className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base text-center w-full">{service}</span>
-              </div>
-            ))}
-          </div> */}
         </div>
       )}
       {children}
