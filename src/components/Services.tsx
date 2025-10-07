@@ -59,19 +59,19 @@ const Services = () => {
             <div id="automotive" className="group relative flex items-center gap-3 bg-card/70 px-6 py-3 rounded-xl border border-primary/40 overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/70 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <Car className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
-              <span className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Automotive</span>
+              <span className="text-lg font-extrabold tracking-wide text-primary drop-shadow-sm group-hover:text-primary-glow transition-colors duration-300 uppercase">Automotive</span>
             </div>
             <div className="text-3xl text-primary">•</div>
             <div id="residential" className="group relative flex items-center gap-3 bg-card/70 px-6 py-3 rounded-xl border border-primary/40 overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/70 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <Home className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
-              <span className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Residential</span>
+              <span className="text-lg font-extrabold tracking-wide text-primary drop-shadow-sm group-hover:text-primary-glow transition-colors duration-300 uppercase">Residential</span>
             </div>
             <div className="text-3xl text-primary">•</div>
             <div id="commercial" className="group relative flex items-center gap-3 bg-card/70 px-6 py-3 rounded-xl border border-primary/40 overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/70 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <Building2 className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
-              <span className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">Commercial</span>
+              <span className="text-lg font-extrabold tracking-wide text-primary drop-shadow-sm group-hover:text-primary-glow transition-colors duration-300 uppercase">Commercial</span>
             </div>
           </div>
           
