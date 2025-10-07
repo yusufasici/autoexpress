@@ -45,21 +45,21 @@ const Header = () => {
               <div className={`absolute left-0 mt-0 w-64 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopServicesDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
               >
                 <ul className="py-2">
-                  <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase">Automotive</li>
+                  <li className="px-4 py-1 text-xs font-extrabold tracking-wide text-primary drop-shadow-sm uppercase">Automotive</li>
                   <li><a href="/services/automotive#car-locked-out" className="block px-4 py-2 hover:bg-primary/10">Car Locked Out</a></li>
                   <li><a href="/services/automotive#car-all-key-lost" className="block px-4 py-2 hover:bg-primary/10">Car All Key Lost</a></li>
                   <li><a href="/services/automotive#car-key-copy" className="block px-4 py-2 hover:bg-primary/10">Car Key Copy</a></li>
                   <li><a href="/services/automotive#car-ignition-repair" className="block px-4 py-2 hover:bg-primary/10">Car Ignition Repair</a></li>
                   <li><a href="/services/automotive#car-key-replacement" className="block px-4 py-2 hover:bg-primary/10">Car Key Replacement</a></li>
                   <li><a href="/services/automotive#motorcyle-locksmith" className="block px-4 py-2 hover:bg-primary/10">Motorcyle Locksmith</a></li>
-                  <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Residential</li>
+                  <li className="px-4 py-1 text-xs font-extrabold tracking-wide text-primary drop-shadow-sm uppercase mt-2">Residential</li>
                   <li><a href="/services/residential#house-locked-out" className="block px-4 py-2 hover:bg-primary/10">House Locked Out</a></li>
                   <li><a href="/services/residential#lock-change" className="block px-4 py-2 hover:bg-primary/10">Lock Change</a></li>
                   <li><a href="/services/residential#lock-rekeying" className="block px-4 py-2 hover:bg-primary/10">Lock Rekeying</a></li>
                   <li><a href="/services/residential#lock-repair" className="block px-4 py-2 hover:bg-primary/10">Lock Repair</a></li>
                   <li><a href="/services/residential#lock-installation" className="block px-4 py-2 hover:bg-primary/10">Lock Installation</a></li>
                   <li><a href="/services/residential#mailbox-lock-change" className="block px-4 py-2 hover:bg-primary/10">Mailbox Lock Change</a></li>
-                  <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Commercial</li>
+                  <li className="px-4 py-1 text-xs font-extrabold tracking-wide text-primary drop-shadow-sm uppercase mt-2">Commercial</li>
                   <li><a href="/services/commercial#business-locked-out" className="block px-4 py-2 hover:bg-primary/10">Business Locked Out</a></li>
                   <li><a href="/services/commercial#master-key-system" className="block px-4 py-2 hover:bg-primary/10">Master Key System</a></li>
                   <li><a href="/services/commercial#lock-change" className="block px-4 py-2 hover:bg-primary/10">Lock Change</a></li>
