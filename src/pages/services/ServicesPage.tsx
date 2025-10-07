@@ -53,7 +53,8 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
       <div className="flex items-center justify-center">
         <img src={logomascot} className="h-56 w-auto opacity-50 object-contain" alt="AutoKey Express Mascot" />
       </div>
-      {/* CTA Buttons */}
+
+      {/* CTA Buttons - moved above card grid */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 mt-2">
         <Button size="lg" className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]" asChild>
           <a href="tel:+16479068124">
