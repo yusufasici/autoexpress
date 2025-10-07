@@ -24,6 +24,7 @@ import LocksmithBrampton from "./pages/service-areas/LocksmithBrampton";
 import Automotive from "./pages/services/Automotive";
 import Residential from "./pages/services/Residential";
 import Commercial from "./pages/services/Commercial";
+import MainServices from "./pages/services/MainServices";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/locksmith-thornhill" element={<LocksmithThornhill />} />
           <Route path="/locksmith-vaughan" element={<LocksmithVaughan />} />
           <Route path="/locksmith-brampton" element={<LocksmithBrampton />} />
+          <Route path="/services" element={<MainServices />} />
           <Route path="/services/automotive" element={<Automotive />} />
           <Route path="/services/residential" element={<Residential />} />
           <Route path="/services/commercial" element={<Commercial />} />

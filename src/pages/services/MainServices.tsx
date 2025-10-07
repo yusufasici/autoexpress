@@ -10,7 +10,6 @@ const allServices = [
   "Car Ignition Repair",
   "Car Key Replacement",
   "Car Speare Key",
-  "Motorcyle Locksmith",
   // Residential
   "House Locked Out",
   "Lock Cahange",
@@ -18,7 +17,6 @@ const allServices = [
   "Lock Repair",
   "Lock Installation",
   "Mailbox Lock Change",
-  "Speare Key",
   // Commercial
   "Businss Locked Out",
   "Master Key System",
@@ -26,7 +24,6 @@ const allServices = [
   "Lock Rekeying",
   "Lock Repair",
   "Lock Installation",
-  "Storage Locked Out",
 ];
 
 const MainServices: React.FC = () => (

@@ -51,8 +51,6 @@ const Header = () => {
                   <li><a href="/services/automotive#car-key-copy" className="block px-4 py-2 hover:bg-primary/10">Car Key Copy</a></li>
                   <li><a href="/services/automotive#car-ignition-repair" className="block px-4 py-2 hover:bg-primary/10">Car Ignition Repair</a></li>
                   <li><a href="/services/automotive#car-key-replacement" className="block px-4 py-2 hover:bg-primary/10">Car Key Replacement</a></li>
-                  <li><a href="/services/automotive#car-speare-key" className="block px-4 py-2 hover:bg-primary/10">Car Speare Key</a></li>
-                  <li><a href="/services/automotive#motorcycle-locksmith" className="block px-4 py-2 hover:bg-primary/10">Motorcyle Locksmith</a></li>
                   <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Residential</li>
                   <li><a href="/services/residential#house-locked-out" className="block px-4 py-2 hover:bg-primary/10">House Locked Out</a></li>
                   <li><a href="/services/residential#lock-change" className="block px-4 py-2 hover:bg-primary/10">Lock Change</a></li>
@@ -60,7 +58,6 @@ const Header = () => {
                   <li><a href="/services/residential#lock-repair" className="block px-4 py-2 hover:bg-primary/10">Lock Repair</a></li>
                   <li><a href="/services/residential#lock-installation" className="block px-4 py-2 hover:bg-primary/10">Lock Installation</a></li>
                   <li><a href="/services/residential#mailbox-lock-change" className="block px-4 py-2 hover:bg-primary/10">Mailbox Lock Change</a></li>
-                  <li><a href="/services/residential#spare-key" className="block px-4 py-2 hover:bg-primary/10">Spare Key</a></li>
                   <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Commercial</li>
                   <li><a href="/services/commercial#business-locked-out" className="block px-4 py-2 hover:bg-primary/10">Business Locked Out</a></li>
                   <li><a href="/services/commercial#master-key-system" className="block px-4 py-2 hover:bg-primary/10">Master Key System</a></li>
@@ -68,7 +65,6 @@ const Header = () => {
                   <li><a href="/services/commercial#lock-rekeying" className="block px-4 py-2 hover:bg-primary/10">Lock Rekeying</a></li>
                   <li><a href="/services/commercial#lock-repair" className="block px-4 py-2 hover:bg-primary/10">Lock Repair</a></li>
                   <li><a href="/services/commercial#lock-installation" className="block px-4 py-2 hover:bg-primary/10">Lock Installation</a></li>
-                  <li><a href="/services/commercial#storage-locked-out" className="block px-4 py-2 hover:bg-primary/10">Storage Locked Out</a></li>
                 </ul>
               </div>
             </div>
@@ -201,8 +197,6 @@ const Header = () => {
                     <li><a href="/services/automotive#car-key-copy" className="block px-4 py-2 hover:bg-primary/10">Car Key Copy</a></li>
                     <li><a href="/services/automotive#car-ignition-repair" className="block px-4 py-2 hover:bg-primary/10">Car Ignition Repair</a></li>
                     <li><a href="/services/automotive#car-key-replacement" className="block px-4 py-2 hover:bg-primary/10">Car Key Replacement</a></li>
-                    <li><a href="/services/automotive#car-speare-key" className="block px-4 py-2 hover:bg-primary/10">Car Speare Key</a></li>
-                    <li><a href="/services/automotive#motorcycle-locksmith" className="block px-4 py-2 hover:bg-primary/10">Motorcyle Locksmith</a></li>
                     <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Residential</li>
                     <li><a href="/services/residential#house-locked-out" className="block px-4 py-2 hover:bg-primary/10">House Locked Out</a></li>
                     <li><a href="/services/residential#lock-cahange" className="block px-4 py-2 hover:bg-primary/10">Lock Cahange</a></li>
@@ -210,7 +204,6 @@ const Header = () => {
                     <li><a href="/services/residential#lock-repair" className="block px-4 py-2 hover:bg-primary/10">Lock Repair</a></li>
                     <li><a href="/services/residential#lock-installation" className="block px-4 py-2 hover:bg-primary/10">Lock Installation</a></li>
                     <li><a href="/services/residential#mailbox-lock-change" className="block px-4 py-2 hover:bg-primary/10">Mailbox Lock Change</a></li>
-                    <li><a href="/services/residential#speare-key" className="block px-4 py-2 hover:bg-primary/10">Speare Key</a></li>
                     <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Commercial</li>
                     <li><a href="/services/commercial#businss-locked-out" className="block px-4 py-2 hover:bg-primary/10">Businss Locked Out</a></li>
                     <li><a href="/services/commercial#master-key-system" className="block px-4 py-2 hover:bg-primary/10">Master Key System</a></li>
@@ -218,7 +211,6 @@ const Header = () => {
                     <li><a href="/services/commercial#lock-rekeying" className="block px-4 py-2 hover:bg-primary/10">Lock Rekeying</a></li>
                     <li><a href="/services/commercial#lock-repair" className="block px-4 py-2 hover:bg-primary/10">Lock Repair</a></li>
                     <li><a href="/services/commercial#lock-installation" className="block px-4 py-2 hover:bg-primary/10">Lock Installation</a></li>
-                    <li><a href="/services/commercial#storage-locked-out" className="block px-4 py-2 hover:bg-primary/10">Storage Locked Out</a></li>
                   </ul>
                 </div>
               )}
