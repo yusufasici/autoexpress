@@ -83,7 +83,7 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
           <div className="mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-3 text-center tracking-tight">24/7 Locksmith Service in the GTA</h2>
             <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center">
-              Need a locksmith <span className="text-primary font-semibold">near you</span>? We offer <span className="font-bold text-foreground">fast</span>, <span className="font-bold text-foreground">reliable</span>, and <span className="font-bold text-foreground">professional</span> locksmith services for vehicles, homes, and businesses across the <span className="text-primary font-semibold">GTA</span>. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="text-primary font-bold">24/7</span>.
+              Need a locksmith <span className="text-primary font-semibold">near you</span>? We offer <span className="text-primary font-semibold">fast</span>, <span className="text-primary font-semibold">reliable</span>, and <span className="text-primary font-semibold">professional</span> locksmith services for vehicles, homes, and businesses across the <span className="text-primary font-semibold">GTA</span>. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="text-primary font-bold">24/7</span>.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
               {services.slice(0, 6).map((service) => (
