@@ -53,29 +53,8 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
       <div className="flex items-center justify-center">
         <img src={logomascot} className="h-56 w-auto opacity-50 object-contain" alt="AutoKey Express Mascot" />
       </div>
-      <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3 flex items-center justify-center gap-2 whitespace-nowrap overflow-hidden text-ellipsis">
-        {title}
-      </h1>
-      <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center max-w-2xl mx-auto">{description}</p>
-      {/* Floating Card Grid (like city pages) */}
-      {services && services.length > 0 && (
-        <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-10 mt-8 mb-10 backdrop-blur-md">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-3">
-            {services.map((service) => (
-              <div
-                key={service}
-                className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-4 px-3 flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0 cursor-pointer"
-                tabIndex={0}
-                aria-label={service}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                <span className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base text-center w-full">{service}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 mt-8">
+      {/* CTA Buttons */}
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 mt-2">
         <Button size="lg" className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]" asChild>
           <a href="tel:+16479068124">
             <Phone className="h-6 w-6" />
@@ -91,6 +70,33 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
           </a>
         </Button>
       </div>
+
+      {/* 24/7 Service Text Block */}
+      <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-8 mt-2 mb-8 backdrop-blur-md">
+        <h2 className="text-2xl md:text-3xl font-bold text-primary mb-3 text-center">24/7 Locksmith Service</h2>
+        <p className="mb-0 text-lg md:text-xl text-muted-foreground text-center">
+          Need a locksmith? We offer <span className="font-semibold">fast, reliable, and professional</span> locksmith services for vehicles, homes, and businesses across the GTA. Whether you’re locked out or need a key replacement, our mobile team is ready to help <span className="font-semibold text-primary">24/7</span>.
+        </p>
+      </div>
+
+      {/* Floating Card Grid (like city pages) */}
+      {services && services.length > 0 && (
+        <div className="max-w-4xl mx-auto bg-card/80 border border-primary/40 rounded-2xl shadow-[var(--shadow-elegant)] p-10 mt-2 mb-10 backdrop-blur-md">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-2 md:gap-x-6 md:gap-y-3">
+            {services.map((service) => (
+              <div
+                key={service}
+                className="group bg-card/60 backdrop-blur-sm border border-border rounded-lg py-4 px-3 flex items-center justify-center relative overflow-hidden transition-all duration-300 hover:shadow-[var(--shadow-elegant)] hover:border-primary/50 hover:scale-105 min-h-0 cursor-pointer"
+                tabIndex={0}
+                aria-label={service}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <span className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight truncate whitespace-nowrap text-base text-center w-full">{service}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       {children}
     </Hero>
     <About />
