@@ -6,17 +6,40 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import logomascot from "@/assets/logomascot2.png";
 import Hero from "@/components/Hero";
+import { Card } from "@/components/ui/card";
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 
 interface ServicesPageProps {
   title: string;
   description: string;
   heroImage?: string;
+  services?: string[];
   children?: React.ReactNode;
 }
 
-const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroImage, children }) => (
+
+const ServiceCardGrid: React.FC<{ services: string[]; page: string }> = ({ services, page }) => (
+  <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+    {services.map((service) => (
+      <a
+        key={service}
+        href={page}
+        className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl"
+        tabIndex={0}
+        aria-label={service}
+      >
+        <Card className="group bg-card border border-primary/20 hover:border-primary/60 hover:shadow-lg transition-all duration-300 p-6 flex items-center justify-center text-center font-semibold text-lg text-primary cursor-pointer">
+          {service}
+        </Card>
+      </a>
+    ))}
+  </div>
+);
+
+
+const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroImage, services = [], children }) => (
   <div className="min-h-screen bg-background">
     <Header />
     <Helmet>
@@ -34,7 +57,8 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
         {title}
       </h1>
       <p className="mb-6 text-lg md:text-xl text-muted-foreground text-center max-w-2xl mx-auto">{description}</p>
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
+      <ServiceCardGrid services={services} page={window.location.pathname} />
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 mt-8">
         <Button size="lg" className="bg-primary hover:bg-primary-glow text-primary-foreground font-bold text-lg px-8 py-6 gap-3 shadow-[var(--shadow-glow)]" asChild>
           <a href="tel:+16479068124">
             <Phone className="h-6 w-6" />

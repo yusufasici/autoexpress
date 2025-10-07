@@ -42,12 +42,24 @@ const Header = () => {
               >
                 <Wrench className="h-5 w-5" /> Services
               </button>
-              <div className={`absolute left-0 mt-0 w-56 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopServicesDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+              <div className={`absolute left-0 mt-0 w-64 bg-background border border-border rounded shadow-lg transition-opacity z-50 ${desktopServicesDropdownOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
               >
                 <ul className="py-2">
+                  <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase">Automotive</li>
                   <li><a href="/services/automotive" className="block px-4 py-2 hover:bg-primary/10">Automotive Locksmith</a></li>
+                  <li><a href="/services/automotive#car-key-replacement" className="block px-4 py-2 hover:bg-primary/10">Car Key Replacement</a></li>
+                  <li><a href="/services/automotive#car-lockout" className="block px-4 py-2 hover:bg-primary/10">Car Lockout</a></li>
+                  <li><a href="/services/automotive#ignition-repair" className="block px-4 py-2 hover:bg-primary/10">Ignition Repair</a></li>
+                  <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Residential</li>
                   <li><a href="/services/residential" className="block px-4 py-2 hover:bg-primary/10">Residential Locksmith</a></li>
+                  <li><a href="/services/residential#lock-rekeying" className="block px-4 py-2 hover:bg-primary/10">Lock Rekeying</a></li>
+                  <li><a href="/services/residential#home-lockout" className="block px-4 py-2 hover:bg-primary/10">Home Lockout</a></li>
+                  <li><a href="/services/residential#safe-unlocking" className="block px-4 py-2 hover:bg-primary/10">Safe Unlocking</a></li>
+                  <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Commercial</li>
                   <li><a href="/services/commercial" className="block px-4 py-2 hover:bg-primary/10">Commercial Locksmith</a></li>
+                  <li><a href="/services/commercial#business-lockout" className="block px-4 py-2 hover:bg-primary/10">Business Lockout</a></li>
+                  <li><a href="/services/commercial#master-key-systems" className="block px-4 py-2 hover:bg-primary/10">Master Key Systems</a></li>
+                  <li><a href="/services/commercial#access-control" className="block px-4 py-2 hover:bg-primary/10">Access Control</a></li>
                 </ul>
               </div>
             </div>
@@ -174,9 +186,21 @@ const Header = () => {
               {mobileServicesDropdownOpen && (
                 <div className="mt-2 w-full bg-background border border-border rounded shadow-lg z-50">
                   <ul className="py-2">
+                    <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase">Automotive</li>
                     <li><a href="/services/automotive" className="block px-4 py-2 hover:bg-primary/10">Automotive Locksmith</a></li>
+                    <li><a href="/services/automotive#car-key-replacement" className="block px-4 py-2 hover:bg-primary/10">Car Key Replacement</a></li>
+                    <li><a href="/services/automotive#car-lockout" className="block px-4 py-2 hover:bg-primary/10">Car Lockout</a></li>
+                    <li><a href="/services/automotive#ignition-repair" className="block px-4 py-2 hover:bg-primary/10">Ignition Repair</a></li>
+                    <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Residential</li>
                     <li><a href="/services/residential" className="block px-4 py-2 hover:bg-primary/10">Residential Locksmith</a></li>
+                    <li><a href="/services/residential#lock-rekeying" className="block px-4 py-2 hover:bg-primary/10">Lock Rekeying</a></li>
+                    <li><a href="/services/residential#home-lockout" className="block px-4 py-2 hover:bg-primary/10">Home Lockout</a></li>
+                    <li><a href="/services/residential#safe-unlocking" className="block px-4 py-2 hover:bg-primary/10">Safe Unlocking</a></li>
+                    <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Commercial</li>
                     <li><a href="/services/commercial" className="block px-4 py-2 hover:bg-primary/10">Commercial Locksmith</a></li>
+                    <li><a href="/services/commercial#business-lockout" className="block px-4 py-2 hover:bg-primary/10">Business Lockout</a></li>
+                    <li><a href="/services/commercial#master-key-systems" className="block px-4 py-2 hover:bg-primary/10">Master Key Systems</a></li>
+                    <li><a href="/services/commercial#access-control" className="block px-4 py-2 hover:bg-primary/10">Access Control</a></li>
                   </ul>
                 </div>
               )}
