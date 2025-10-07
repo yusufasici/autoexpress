@@ -8,6 +8,7 @@ const automotiveServices = [
   "Car Key Copy",
   "Car Ignition Repair",
   "Car Key Replacement",
+  "Motorcyle Locksmith",
 ];
 
 const Automotive: React.FC = () => (

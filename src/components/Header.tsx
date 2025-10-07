@@ -51,6 +51,7 @@ const Header = () => {
                   <li><a href="/services/automotive#car-key-copy" className="block px-4 py-2 hover:bg-primary/10">Car Key Copy</a></li>
                   <li><a href="/services/automotive#car-ignition-repair" className="block px-4 py-2 hover:bg-primary/10">Car Ignition Repair</a></li>
                   <li><a href="/services/automotive#car-key-replacement" className="block px-4 py-2 hover:bg-primary/10">Car Key Replacement</a></li>
+                  <li><a href="/services/automotive#motorcyle-locksmith" className="block px-4 py-2 hover:bg-primary/10">Motorcyle Locksmith</a></li>
                   <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Residential</li>
                   <li><a href="/services/residential#house-locked-out" className="block px-4 py-2 hover:bg-primary/10">House Locked Out</a></li>
                   <li><a href="/services/residential#lock-change" className="block px-4 py-2 hover:bg-primary/10">Lock Change</a></li>
@@ -197,6 +198,7 @@ const Header = () => {
                     <li><a href="/services/automotive#car-key-copy" className="block px-4 py-2 hover:bg-primary/10">Car Key Copy</a></li>
                     <li><a href="/services/automotive#car-ignition-repair" className="block px-4 py-2 hover:bg-primary/10">Car Ignition Repair</a></li>
                     <li><a href="/services/automotive#car-key-replacement" className="block px-4 py-2 hover:bg-primary/10">Car Key Replacement</a></li>
+                    <li><a href="/services/automotive#motorcyle-locksmith" className="block px-4 py-2 hover:bg-primary/10">Motorcyle Locksmith</a></li>
                     <li className="px-4 py-1 text-xs font-bold text-muted-foreground uppercase mt-2">Residential</li>
                     <li><a href="/services/residential#house-locked-out" className="block px-4 py-2 hover:bg-primary/10">House Locked Out</a></li>
                     <li><a href="/services/residential#lock-cahange" className="block px-4 py-2 hover:bg-primary/10">Lock Cahange</a></li>

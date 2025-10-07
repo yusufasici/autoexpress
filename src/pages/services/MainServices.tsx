@@ -9,6 +9,7 @@ const allServices = [
   "Car Key Copy",
   "Car Ignition Repair",
   "Car Key Replacement",
+  "Motorcyle Locksmith",
   "Car Speare Key",
   // Residential
   "House Locked Out",
