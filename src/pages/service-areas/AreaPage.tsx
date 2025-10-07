@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { Clock, Zap, Award, DollarSign, MapPin, Star } from "lucide-react";
 import { Helmet } from "react-helmet-async";

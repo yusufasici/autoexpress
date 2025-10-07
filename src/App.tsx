@@ -6,21 +6,25 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import LocksmithToronto from "./pages/LocksmithToronto";
-import LocksmithAurora from "./pages/LocksmithAurora";
-import LocksmithBolton from "./pages/LocksmithBolton";
-import LocksmithConcord from "./pages/LocksmithConcord";
-import LocksmithEtobicoke from "./pages/LocksmithEtobicoke";
-import LocksmithMaple from "./pages/LocksmithMaple";
-import LocksmithMarkham from "./pages/LocksmithMarkham";
-import LocksmithMississauga from "./pages/LocksmithMississauga";
-import LocksmithNorthYork from "./pages/LocksmithNorthYork";
-import LocksmithOakville from "./pages/LocksmithOakville";
-import LocksmithRichmondHill from "./pages/LocksmithRichmondHill";
-import LocksmithScarborough from "./pages/LocksmithScarborough";
-import LocksmithThornhill from "./pages/LocksmithThornhill";
-import LocksmithVaughan from "./pages/LocksmithVaughan";
-import LocksmithBrampton from "./pages/LocksmithBrampton";
+import LocksmithToronto from "./pages/service-areas/LocksmithToronto";
+import LocksmithAurora from "./pages/service-areas/LocksmithAurora";
+import LocksmithBolton from "./pages/service-areas/LocksmithBolton";
+import LocksmithConcord from "./pages/service-areas/LocksmithConcord";
+import LocksmithEtobicoke from "./pages/service-areas/LocksmithEtobicoke";
+import LocksmithMaple from "./pages/service-areas/LocksmithMaple";
+import LocksmithMarkham from "./pages/service-areas/LocksmithMarkham";
+import LocksmithMississauga from "./pages/service-areas/LocksmithMississauga";
+import LocksmithNorthYork from "./pages/service-areas/LocksmithNorthYork";
+import LocksmithOakville from "./pages/service-areas/LocksmithOakville";
+import LocksmithRichmondHill from "./pages/service-areas/LocksmithRichmondHill";
+import LocksmithScarborough from "./pages/service-areas/LocksmithScarborough";
+import LocksmithThornhill from "./pages/service-areas/LocksmithThornhill";
+import LocksmithVaughan from "./pages/service-areas/LocksmithVaughan";
+import LocksmithBrampton from "./pages/service-areas/LocksmithBrampton";
+import Automotive from "./pages/services/Automotive";
+import Residential from "./pages/services/Residential";
+import Commercial from "./pages/services/Commercial";
+import MainServices from "./pages/services/MainServices";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +51,10 @@ const App = () => (
           <Route path="/locksmith-thornhill" element={<LocksmithThornhill />} />
           <Route path="/locksmith-vaughan" element={<LocksmithVaughan />} />
           <Route path="/locksmith-brampton" element={<LocksmithBrampton />} />
+          <Route path="/services" element={<MainServices />} />
+          <Route path="/services/automotive" element={<Automotive />} />
+          <Route path="/services/residential" element={<Residential />} />
+          <Route path="/services/commercial" element={<Commercial />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
