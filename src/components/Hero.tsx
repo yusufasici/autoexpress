@@ -56,13 +56,13 @@ const Hero: React.FC<HeroProps> = ({ children, image }) => {
             <>
               {/* Logo Mascot*/}
               <div className="flex items-center justify-center">
-                <img src={logomascot} className="h-56 w-auto opacity-50 object-contain" />
+                <img src={logomascot} className="h-56 w-auto opacity-50 object-contain" alt="AutoKey Express Professional Locksmith Services GTA" />
               </div>
 
-              {/* Subtitle */}
+              {/* Enhanced Subtitle with Keywords */}
               <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto">
-                Automotive • Residential • Commercial • Locksmith Services
-                Fast • Reliable • Licenced • Insured • Certified
+                24/7 Emergency Locksmith • Automotive • Residential • Commercial<br />
+                <span className="text-lg">Fast Response • Licensed • Insured • Professional Locksmith Services GTA</span>
               </p>
 
               {/* CTA Button */}

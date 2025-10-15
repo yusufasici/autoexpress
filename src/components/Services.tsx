@@ -76,7 +76,7 @@ const Services = () => {
           </div>
           
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            24/7 mobile locksmiths for cars, homes, and commercial properties.          
+            Professional 24/7 emergency locksmith services across the GTA. Fast response for automotive lockouts, residential lock installation, and commercial security systems.          
           </p>
         </div>
 

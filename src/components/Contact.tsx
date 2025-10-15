@@ -235,7 +235,7 @@ const Contact = () => {
                       id="phone"
                       name="phone"
                       type="tel"
-                      placeholder="(647) 906-8124" 
+                      placeholder="(647) 999-9999" 
                       required
                       className="bg-input border-border text-foreground"
                     />

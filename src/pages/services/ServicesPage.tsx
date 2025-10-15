@@ -43,11 +43,36 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ title, description, heroIma
   <div className="min-h-screen bg-background">
     <Header />
     <Helmet>
-      <title>{title} | Locksmith Services | AutoKey Express</title>
-      <meta name="description" content={description} />
+      <title>{title} | 24/7 Locksmith Services GTA | AutoKey Express</title>
+      <meta name="description" content={`${description} Licensed, insured, fast response. Call (647) 906-8124 for immediate assistance.`} />
+      <meta name="keywords" content={`${title.toLowerCase()}, locksmith, GTA, Toronto, emergency locksmith, 24/7 locksmith, ${services.slice(0, 5).join(', ').toLowerCase()}`} />
       <link rel="canonical" href={`https://autokeyexpress.ca/services/${title.toLowerCase().replace(/\s/g, "-")}`} />
       <meta property="og:title" content={`${title} | AutoKey Express`} />
       <meta property="og:description" content={description} />
+      <meta property="og:type" content="service" />
+      <meta property="og:url" content={`https://autokeyexpress.ca/services/${title.toLowerCase().replace(/\s/g, "-")}`} />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": title,
+          "description": description,
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "AutoKey Express",
+            "telephone": "+16479068124",
+            "url": "https://autokeyexpress.ca"
+          },
+          "areaServed": [
+            "Toronto", "Mississauga", "Brampton", "Markham", "Vaughan", "Richmond Hill", "Scarborough", "North York", "Etobicoke"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "priceRange": "$$"
+          }
+        })}
+      </script>
     </Helmet>
     <Hero image={heroImage}>
       <div className="flex items-center justify-center">
