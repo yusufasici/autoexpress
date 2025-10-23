@@ -1,0 +1,7 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="56" fill="#3b82f6"/>
+  <circle cx="256" cy="256" r="128" fill="white"/>
+  <path d="M256 192v128M192 256h128" stroke="#3b82f6" stroke-width="12" stroke-linecap="round"/>
+  <text x="256" y="420" text-anchor="middle" fill="white" font-family="Arial" font-size="42" font-weight="bold">AutoKey</text>
+  <text x="256" y="460" text-anchor="middle" fill="white" font-family="Arial" font-size="24">Inventory</text>
+</svg>

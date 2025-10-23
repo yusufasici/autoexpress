@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# Specific allowances for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Social media crawlers
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://autokeyexpress.ca/sitemap.xml
+
+# Crawl delay for other bots
+User-agent: *
+Crawl-delay: 1
