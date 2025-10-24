@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../types';
-import { useInventory } from '../context/InventoryContext';
+import { useInventory } from '../context/HybridInventoryContext';
 
 type AddItemScreenNavigationProp = StackNavigationProp<RootStackParamList, 'AddItem'>;
 
