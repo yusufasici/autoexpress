@@ -1,16 +1,35 @@
-import { createClient } from '@supabase/supabase-js';
+import { Platform } from 'react-native';
 import { InventoryItem, JobSite, JobSiteUsage } from '../types';
 
-// Supabase configuration from environment variables
-const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL || 'YOUR_SUPABASE_URL';
-const supabaseKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || 'YOUR_SUPABASE_ANON_KEY';
+// Only import Supabase on native platforms
+let supabase: any = null;
+let createClient: any = null;
 
-export const supabase = createClient(supabaseUrl, supabaseKey);
+if (Platform.OS !== 'web') {
+  try {
+    // Dynamic import for native platforms only
+    const supabaseModule = require('@supabase/supabase-js');
+    createClient = supabaseModule.createClient;
+    
+    const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL || 'YOUR_SUPABASE_URL';
+    const supabaseKey = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || 'YOUR_SUPABASE_ANON_KEY';
+    
+    supabase = createClient(supabaseUrl, supabaseKey);
+  } catch (error) {
+    console.log('Supabase not available, using local storage only');
+  }
+}
+
+export { supabase };
 
 // Database service for inventory items
 export class InventoryService {
   // Get all inventory items
   static async getItems(): Promise<InventoryItem[]> {
+    if (Platform.OS === 'web' || !supabase) {
+      return []; // Return empty array for web platform
+    }
+    
     try {
       const { data, error } = await supabase
         .from('inventory_items')
@@ -19,7 +38,7 @@ export class InventoryService {
 
       if (error) throw error;
       
-      return data?.map(item => ({
+      return data?.map((item: any) => ({
         ...item,
         createdAt: new Date(item.created_at),
         updatedAt: new Date(item.updated_at),
@@ -32,6 +51,10 @@ export class InventoryService {
 
   // Add new item
   static async addItem(item: Omit<InventoryItem, 'id' | 'createdAt' | 'updatedAt'>): Promise<InventoryItem | null> {
+    if (Platform.OS === 'web' || !supabase) {
+      return null; // Return null for web platform
+    }
+    
     try {
       const { data, error } = await supabase
         .from('inventory_items')
@@ -130,7 +153,7 @@ export class InventoryService {
 
       if (error) throw error;
 
-      return data?.map(item => ({
+      return data?.map((item: any) => ({
         ...item,
         unitPrice: item.unit_price,
         createdAt: new Date(item.created_at),
@@ -154,7 +177,7 @@ export class JobSiteService {
 
       if (error) throw error;
 
-      return data?.map(site => ({
+      return data?.map((site: any) => ({
         ...site,
         isActive: site.is_active,
         createdAt: new Date(site.created_at),
@@ -242,7 +265,7 @@ export class UsageService {
 
       if (error) throw error;
 
-      return data?.map(usage => ({
+      return data?.map((usage: any) => ({
         id: usage.id,
         itemId: usage.item_id,
         jobSiteId: usage.job_site_id,
